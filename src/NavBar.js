@@ -11,10 +11,10 @@ class NavBar extends React.Component {
           backgroundImage:`url(https://images.pexels.com/photos/751374/pexels-photo-751374.jpeg?cs=srgb&dl=blur-bokeh-bright-751374.jpg&fm=jpg)`,
           backgroundSize: " cover ",
           backgroundRepeat: 'no-repeat',
-          minHeight: 300,
+          minHeight: 150,
           backgroundPosition: 'center'
         }} vertical>
-          <Header as="h1" style={{ paddingTop: '100px', fontFamily:'Satisfy'}}>Sassy Lash & Esthetics</Header>
+          <Header as="h2" style={{ paddingTop: '50px', fontFamily:'Great Vibes', fontSize: '50px'}}>Sassy Lash & Esthetics</Header>
         </Segment>
 
         <Container>
@@ -33,6 +33,16 @@ class NavBar extends React.Component {
               <Grid.Column style={{width: '125px'}}>
               <Link to='/photos' centered style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
                <Header textAlign='center' as="h3" as="h3" style={{fontFamily: 'Arsenal'}}>Photo Gallery</Header>
+              </Link>
+              </Grid.Column>
+              <Grid.Column style={{width: '125px'}}>
+              <Link to='/faq' centered style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+               <Header textAlign='center' as="h3" as="h3" style={{fontFamily: 'Arsenal'}}>FAQ</Header>
+              </Link>
+              </Grid.Column>
+              <Grid.Column style={{width: '125px'}}>
+              <Link to='/aftercare' centered style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+               <Header textAlign='center' as="h3" as="h3" style={{fontFamily: 'Arsenal'}}>After Care</Header>
               </Link>
               </Grid.Column>
               <Grid.Column style={{width: '125px'}}>

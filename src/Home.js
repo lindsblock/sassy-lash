@@ -1,17 +1,17 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Header, Segment, Button, Divider, Container, Grid, Icon, Image } from 'semantic-ui-react';
+import { Header, Segment, Button, Container, Grid, Icon, Image } from 'semantic-ui-react';
 
 
 class Home extends React.Component {
   render() {
     return (
       <div>
-        <Segment style={{ padding: '8em 0em' }} vertical>
+        <Header as="h1" style={styles.pageHeaders}>Professional Eyelash Extensions</Header>
+        <Segment style={{ padding: '3em 0em' }} vertical>
         <Grid container stackable verticalAlign='middle'>
           <Grid.Row>
             <Grid.Column style={{fontFamily: 'Arsenal'}} width={8}>
-              <Header as='h3' style={{ fontSize: '2em', fontFamily: 'Satisfy' }}>We Find Local Professionals You Can Trust!</Header>
+              <Header as='h3' style={{ fontSize: '2em', fontFamily: 'Arima Madurai' }}>Why Choose Sassy Lash?</Header>
                 <p style={{ fontSize: '1.33em' }}>
                 We get all of our professionals and run them through a rigerous process to weed out those who don't deserve your business. We only work with the highest quality and affordable professionals who do what they say they will do.
               </p>
@@ -25,7 +25,7 @@ class Home extends React.Component {
                 bordered
                 rounded
                 size='large'
-                src='../images/IMG_5373.JPG'
+                src='../images/volume8.JPG'
               />
             </Grid.Column>
           </Grid.Row>
@@ -43,7 +43,7 @@ class Home extends React.Component {
                   <p>10691 S State Street, #107<br />Sandy, Utah 84070</p>
                   <div textAlign='center' relaxed columns={3}>
                       <Button circular color='facebook' icon='facebook' />
-                      <Button circular color='imstagram' icon='instagram' />
+                      <Button circular color='instagram' icon='instagram' />
                     </div>
                 </div>
               </Grid.Column>
@@ -59,5 +59,19 @@ class Home extends React.Component {
     );
   }
 }
-
+const styles = {
+  pageHeaders: {
+    fontFamily: 'Great Vibes',
+    fontSize: '60px',
+    textAlign: 'center',
+  },
+  headers: {
+    fontFamily: 'Great Vibes',
+    fontSize: '45px'
+  },
+  cardHeaders: {
+    fontFamily: '',
+    fontSize: '30px'
+  }
+}
 export default Home;

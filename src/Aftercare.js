@@ -2,11 +2,11 @@ import React from 'react';
 import { Header } from 'semantic-ui-react';
 
 
-class Services extends React.Component {
+class Aftercare extends React.Component {
   render() {
     return (
       <div >
-        <Header as="h1" style={styles.pageHeaders}> Services</Header>
+        <Header as="h1" style={styles.pageHeaders}> Eyelash After Care</Header>
       </div>
     );
   }
@@ -26,4 +26,5 @@ const styles = {
     fontSize: '30px'
   }
 }
-export default Services;
+
+export default Aftercare;
