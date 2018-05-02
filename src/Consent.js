@@ -1,12 +1,12 @@
 import React from 'react';
 import { Card, Image, Header, Embed } from 'semantic-ui-react';
 
-class About extends React.Component {
+class Consent extends React.Component {
 
   render() {
     return (
       <div >
-        <Header as="h1" style={styles.pageHeaders}> About Janessa</Header>
+        <Header as="h1" style={styles.pageHeaders}> Consent Form</Header>
 
       </div>
     );
@@ -19,11 +19,11 @@ const styles = {
     textAlign: 'center',
     paddingTop: '20px'
   },
-  headers: {
-    fontFamily: 'Great Vibes',
-    fontSize: '45px'
+  secondaryHeaders: {
+    fontFamily: 'Arima Madurai',
+    fontSize: '2em'
   }
 }
 
 
-export default About;
+export default Consent;

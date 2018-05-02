@@ -15,44 +15,50 @@ class NavBar extends React.Component {
           backgroundPosition: 'center'
         }} vertical>
           <Header as="h2" style={{ paddingTop: '50px', fontFamily:'Great Vibes', fontSize: '50px'}}>Sassy Lash & Esthetics</Header>
+          <Image centered src='./images/lashes3.png'/>
         </Segment>
 
         <Container>
           <Grid computer={6} tablet={3} mobile={1} divided centered>
             <Grid.Row  centered style={{marginTop:"15px" }}>
               <Grid.Column style={{width: '125px'}}>
-              <Link to='/'  centered style={{display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                 <Header verticalAlign="center"  as="h3" style={{fontFamily: 'Arsenal'}}>Home</Header>
+              <Link to='/'  centered >
+                   <Header as="h3" style={styles.navHeaders}>Home</Header>
               </Link>
               </Grid.Column>
               <Grid.Column style={{width: '125px'}}>
-              <Link to='/services' centered style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-                 <Header as="h3" as="h3" textAlign="center" style={{fontFamily: 'Arsenal'}}>Services & Pricing</Header>
+              <Link to='/services' centered >
+                 <Header as="h3"  textAlign="center" style={styles.navHeaders}>Services & Pricing</Header>
               </Link>
               </Grid.Column>
               <Grid.Column style={{width: '125px'}}>
-              <Link to='/photos' centered style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-               <Header textAlign='center' as="h3" as="h3" style={{fontFamily: 'Arsenal'}}>Photo Gallery</Header>
+              <Link to='/photos' centered >
+               <Header textAlign='center' as="h3"  style={styles.navHeaders}>Photo Gallery</Header>
               </Link>
               </Grid.Column>
               <Grid.Column style={{width: '125px'}}>
-              <Link to='/faq' centered style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-               <Header textAlign='center' as="h3" as="h3" style={{fontFamily: 'Arsenal'}}>FAQ</Header>
+              <Link to='/faq' centered >
+               <Header textAlign='center' as="h3"  style={styles.navHeaders}>FAQ</Header>
               </Link>
               </Grid.Column>
               <Grid.Column style={{width: '125px'}}>
-              <Link to='/aftercare' centered style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-               <Header textAlign='center' as="h3" as="h3" style={{fontFamily: 'Arsenal'}}>After Care</Header>
+              <Link to='/aftercare' centered >
+               <Header textAlign='center' as="h3" style={styles.navHeaders}>After Care</Header>
               </Link>
               </Grid.Column>
               <Grid.Column style={{width: '125px'}}>
-              <Link to='/about' centered style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-                 <Header textAlign='center' as="h3" as="h3" style={{fontFamily: 'Arsenal'}}>About Janessa</Header>
+              <Link to='/about' centered>
+                 <Header textAlign='center' as="h3" style={styles.navHeaders}>About Janessa</Header>
               </Link>
               </Grid.Column>
               <Grid.Column style={{width: '125px'}}>
-              <Link to='/contact' centered style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-                 <Header textAlign='center' as="h3" as="h3" style={{fontFamily: 'Arsenal'}}>Contact</Header>
+              <Link to='/policies' centered >
+                 <Header textAlign='center' as="h3" style={styles.navHeaders}>Policies & Consent</Header>
+              </Link>
+              </Grid.Column>
+              <Grid.Column style={{width: '125px'}}>
+              <Link to='/contact' centered>
+                 <Header textAlign='center' as="h3" style={styles.navHeaders}>Contact</Header>
               </Link>
               </Grid.Column>
             </Grid.Row>
@@ -62,6 +68,16 @@ class NavBar extends React.Component {
 
     </div>
     )
+  }
+}
+
+const styles = {
+  navHeaders:{
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    fontFamily: 'Arima Madurai',
+    marginTop:'15px'
   }
 }
 

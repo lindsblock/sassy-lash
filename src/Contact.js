@@ -1,11 +1,21 @@
 import React from 'react';
-import { Grid, Header, Segment, Image } from 'semantic-ui-react';
-
+import { Grid, Header, Segment, Image, Button, Icon } from 'semantic-ui-react';
+import { Link } from 'react-router-dom';
+import GoogleMapReact from 'google-map-react';
 
 class Contact extends React.Component {
+  static defaultProps = {
+    center: {
+      lat: 40.5573,
+      lng: -111.8904
+    },
+    zoom: 16
+  };
+
+
   render() {
     return (
-      <div >
+      <div style={{ padding:'20px'}}>
         <Header as="h1" style={styles.pageHeaders}> Contact </Header>
           <Segment style={{ padding: '2em 5em' }} vertical>
           <Grid container stackable verticalAlign='middle'>
@@ -20,24 +30,42 @@ class Contact extends React.Component {
               </Grid.Column>
               <Grid.Column floated="right" style={{fontFamily: 'Arsenal'}} width={8}>
                 <Segment>
-                <Header as='h3' style={{ fontSize: '2em' }}>Address</Header>
+
+                <Header as='h3' style={styles.secondaryHeaders}>Address</Header>
+                <div style={{ height: '40vh', width: '50%' }}>
+                <GoogleMapReact
+                  defaultCenter={this.props.center}
+                  defaultZoom={this.props.zoom}
+                >
+                  <Icon marker
+                    lat={40.5573}
+                    lng={111.8904}
+                    text={'Kreyser Avrora'}
+                  />
+                </GoogleMapReact>
+              </div>
                 <p style={{ fontSize: '1.33em' }}>
                   <p>Image Studios Sandy</p>
                   10691 S State Street, #107
                   <p>Sandy, Utah 84070</p>
                 </p>
-                <Header as='h3' style={{ fontSize: '2em' }}>Phone</Header>
+                <Header as='h3' style={styles.secondaryHeaders}>Phone</Header>
                 <p style={{ fontSize: '1.33em' }}>
                   (801) 688-6823
                 </p>
-                <Header as='h3' style={{ fontSize: '2em' }}>Email</Header>
+                <Header as='h3' style={styles.secondaryHeaders}>Email</Header>
                 <p style={{ fontSize: '1.33em' }}>
                   nessablueeyes7@hotmail.com
                 </p>
-                <Header as='h3' style={{ fontSize: '2em' }}>Hours</Header>
+                <Header as='h3' style={styles.secondaryHeaders}>Hours</Header>
                 <p style={{ fontSize: '1.33em' }}>
                   By Appointment Only. I offer weekend and night appointments.Text me for more info.
                 </p>
+                <div textAlign='center' relaxed columns={3}>
+                  <Button circular color='facebook' icon='facebook' />
+                  <Button circular color='instagram' icon='instagram' />
+                </div>
+                <Link to='./policies' style={{ fontSize: '1.33em'}}>View my policies</Link>
               </Segment>
               </Grid.Column>
             </Grid.Row>
@@ -53,14 +81,11 @@ const styles = {
     fontFamily: 'Great Vibes',
     fontSize: '60px',
     textAlign: 'center',
+    paddingTop: '20px'
   },
-  headers: {
-    fontFamily: 'Great Vibes',
-    fontSize: '45px'
-  },
-  cardHeaders: {
-    fontFamily: '',
-    fontSize: '30px'
+  secondaryHeaders: {
+    fontFamily: 'Arima Madurai',
+    fontSize: '2em'
   }
 }
 

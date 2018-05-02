@@ -6,18 +6,18 @@ import ImageZoom from 'react-medium-image-zoom';
 class Photos extends React.Component {
   render() {
     return (
-      <div style={{padding: '50px', fontFamily: 'Arsenal'}}>
+      <div style={{padding: '50px', fontFamily: 'Arsenal', fontSize: '18px'}}>
         <Header as="h1" style={styles.pageHeaders}> Photo Gallery</Header>
-        <Header as="h1" textAlign="center" style={styles.headers}>Classic Lashes</Header>
+        <Header as="h1" style={styles.secondaryHeaders}>Classic Lashes</Header>
         <Card.Group centered itemsPerRow={3}>
           <Card>
-            <Card.Content textAlign="center" image>
+            <Card.Content textAlign="center">
               <ImageZoom
                 image={{
                   src: '../images/classic1.JPG',
                   alt: 'Classic Lashes',
                   className: 'img',
-                  style: { width: '25em'}
+                  style: { width: '18em', height:'18em'}
                 }}
                 zoomImage={{
                   src: '../images/classic1.JPG',
@@ -25,7 +25,7 @@ class Photos extends React.Component {
                 }}
               />
               <Divider hidden />
-             <Card.Header style={{fontFamily: 'Ruthie', fontSize: '25px'}}>
+             <Card.Header style={styles.cardHeaders}>
                Classic Lashes
              </Card.Header>
              <Card.Description>
@@ -34,13 +34,13 @@ class Photos extends React.Component {
             </Card.Content>
           </Card>
           <Card>
-            <Card.Content textAlign="center" image>
+            <Card.Content textAlign="center">
               <ImageZoom
                 image={{
                   src: '../images/classic2.JPG',
                   alt: 'Classic Lashes',
                   className: 'img',
-                  style: { width: '25em'}
+                  style: { width: '18em', height:'18em'}
                 }}
                 zoomImage={{
                   src: '../images/classic2.JPG',
@@ -48,7 +48,7 @@ class Photos extends React.Component {
                 }}
               />
               <Divider hidden />
-             <Card.Header>
+             <Card.Header style={styles.cardHeaders}>
                Classic Lashes
              </Card.Header>
              <Card.Description>
@@ -57,13 +57,13 @@ class Photos extends React.Component {
             </Card.Content>
           </Card>
           <Card>
-            <Card.Content textAlign="center" image>
+            <Card.Content textAlign="center">
               <ImageZoom
                 image={{
                   src: '../images/classic3.JPG',
                   alt: 'Classic Lashes',
                   className: 'img',
-                  style: { width: '25em'}
+                  style: { width: '18em', height:'18em'}
                 }}
                 zoomImage={{
                   src: '../images/classic3.JPG',
@@ -71,7 +71,7 @@ class Photos extends React.Component {
                 }}
               />
               <Divider hidden />
-              <Card.Header>
+              <Card.Header style={styles.cardHeaders}>
                 Classic Lashes
               </Card.Header>
               <Card.Description>
@@ -81,16 +81,16 @@ class Photos extends React.Component {
           </Card>
         </Card.Group>
         <Divider />
-        <Header as="h1" textAlign="center">Volume Lashes</Header>
+        <Header as="h1" style={styles.secondaryHeaders}>Volume Lashes</Header>
         <Card.Group centered itemsPerRow={3}>
           <Card>
-            <Card.Content textAlign="center" image>
+            <Card.Content textAlign="center">
               <ImageZoom
                 image={{
                   src: '../images/volume2.JPG',
                   alt: 'Volume Lashes',
                   className: 'img',
-                  style: { width: '25em'}
+                  style: { width: '18em', height:'18em' }
                 }}
                 zoomImage={{
                   src: '../images/Volume2.JPG',
@@ -98,7 +98,7 @@ class Photos extends React.Component {
                 }}
               />
               <Divider hidden />
-              <Card.Header>
+              <Card.Header style={styles.cardHeaders}>
                 Volume Lashes
               </Card.Header>
               <Card.Description>
@@ -107,13 +107,13 @@ class Photos extends React.Component {
             </Card.Content>
           </Card>
           <Card>
-            <Card.Content textAlign="center" image>
+            <Card.Content textAlign="center">
               <ImageZoom
                 image={{
                   src: '../images/volume2halfweeks.JPG',
                   alt: 'Volume Lashes',
                   className: 'img',
-                  style: { width: '25em'}
+                  style: { width: '18em', height:'18em' }
                 }}
                 zoomImage={{
                   src: '../images/volume2halfweeks.JPG',
@@ -121,7 +121,7 @@ class Photos extends React.Component {
                 }}
               />
               <Divider hidden />
-              <Card.Header>
+              <Card.Header style={styles.cardHeaders}>
                 Volume Lashes
               </Card.Header>
               <Card.Description>
@@ -130,13 +130,13 @@ class Photos extends React.Component {
             </Card.Content>
           </Card>
           <Card>
-            <Card.Content textAlign="center" image>
+            <Card.Content textAlign="center">
               <ImageZoom
                 image={{
                   src: '../images/volume3.JPG',
                   alt: 'Volume Lashes',
                   className: 'img',
-                  style: { width: '25em'}
+                  style: { width: '18em', height:'18em' }
                 }}
                 zoomImage={{
                   src: '../images/Volume3.JPG',
@@ -144,7 +144,7 @@ class Photos extends React.Component {
                 }}
               />
               <Divider hidden />
-              <Card.Header>
+              <Card.Header style={styles.cardHeaders}>
                 Volume Lashes
               </Card.Header>
               <Card.Description>
@@ -153,13 +153,13 @@ class Photos extends React.Component {
             </Card.Content>
           </Card>
           <Card>
-            <Card.Content textAlign="center" image>
+            <Card.Content textAlign="center">
               <ImageZoom
                 image={{
                   src: '../images/volume4.JPG',
                   alt: 'Volume Lashes',
                   className: 'img',
-                  style: { width: '25em'}
+                  style: { width: '18em', height:'18em' }
                 }}
                 zoomImage={{
                   src: '../images/Volume4.JPG',
@@ -167,7 +167,7 @@ class Photos extends React.Component {
                 }}
               />
               <Divider hidden />
-              <Card.Header>
+              <Card.Header style={styles.cardHeaders}>
                 Volume Lashes
               </Card.Header>
               <Card.Description>
@@ -176,13 +176,13 @@ class Photos extends React.Component {
             </Card.Content>
           </Card>
           <Card>
-            <Card.Content textAlign="center" image>
+            <Card.Content textAlign="center">
               <ImageZoom
                 image={{
                   src: '../images/volume5.JPG',
                   alt: 'Volume Lashes',
                   className: 'img',
-                  style: { width: '25em'}
+                  style: { width: '18em', height:'18em' }
                 }}
                 zoomImage={{
                   src: '../images/Volume5.JPG',
@@ -190,7 +190,7 @@ class Photos extends React.Component {
                 }}
               />
               <Divider hidden />
-              <Card.Header>
+              <Card.Header style={styles.cardHeaders}>
                 Volume Lashes
               </Card.Header>
               <Card.Description>
@@ -199,13 +199,13 @@ class Photos extends React.Component {
             </Card.Content>
           </Card>
           <Card>
-            <Card.Content textAlign="center" image>
+            <Card.Content textAlign="center">
               <ImageZoom
                 image={{
                   src: '../images/volume6.JPG',
                   alt: 'Volume Lashes',
                   className: 'img',
-                  style: { width: '25em'}
+                  style: { width: '18em', height:'18em' }
                 }}
                 zoomImage={{
                   src: '../images/Volume6.JPG',
@@ -213,7 +213,7 @@ class Photos extends React.Component {
                 }}
               />
               <Divider hidden />
-              <Card.Header>
+              <Card.Header style={styles.cardHeaders}>
                 Volume Lashes
               </Card.Header>
               <Card.Description>
@@ -222,13 +222,13 @@ class Photos extends React.Component {
             </Card.Content>
           </Card>
           <Card>
-            <Card.Content textAlign="center" image>
+            <Card.Content textAlign="center">
               <ImageZoom
                 image={{
                   src: '../images/volume7.JPG',
                   alt: 'Volume Lashes',
                   className: 'img',
-                  style: { width: '25em'}
+                  style: { width: '18em', height:'18em' }
                 }}
                 zoomImage={{
                   src: '../images/Volume7.JPG',
@@ -236,7 +236,7 @@ class Photos extends React.Component {
                 }}
               />
               <Divider hidden />
-              <Card.Header>
+              <Card.Header style={styles.cardHeaders}>
                 Volume Lashes
               </Card.Header>
               <Card.Description>
@@ -245,13 +245,13 @@ class Photos extends React.Component {
             </Card.Content>
           </Card>
           <Card>
-            <Card.Content textAlign="center" image>
+            <Card.Content textAlign="center">
               <ImageZoom
                 image={{
                   src: '../images/volume8.JPG',
                   alt: 'Volume Lashes',
                   className: 'img',
-                  style: { width: '25em'}
+                  style: { width: '18em', height:'18em' }
                 }}
                 zoomImage={{
                   src: '../images/Volume8.JPG',
@@ -259,7 +259,7 @@ class Photos extends React.Component {
                 }}
               />
               <Divider hidden />
-              <Card.Header>
+              <Card.Header style={styles.cardHeaders}>
                 Volume Lashes
               </Card.Header>
               <Card.Description>
@@ -268,13 +268,13 @@ class Photos extends React.Component {
             </Card.Content>
           </Card>
           <Card>
-            <Card.Content textAlign="center" image>
+            <Card.Content textAlign="center">
               <ImageZoom
                 image={{
                   src: '../images/volume9.JPG',
                   alt: 'Volume Lashes',
                   className: 'img',
-                  style: { width: '25em'}
+                  style: { width: '18em', height:'18em' }
                 }}
                 zoomImage={{
                   src: '../images/Volume9.JPG',
@@ -282,7 +282,7 @@ class Photos extends React.Component {
                 }}
               />
               <Divider hidden />
-              <Card.Header>
+              <Card.Header style={styles.cardHeaders}>
                 Volume Lashes
               </Card.Header>
               <Card.Description>
@@ -292,16 +292,16 @@ class Photos extends React.Component {
           </Card>
         </Card.Group>
         <Divider />
-        <Header as="h1" textAlign="center" >Hybrid Lashes</Header>
+        <Header as="h1" style={styles.secondaryHeaders} >Hybrid Lashes</Header>
         <Card.Group centered itemsPerRow={3}>
           <Card>
-            <Card.Content textAlign="center" image>
+            <Card.Content textAlign="center">
               <ImageZoom
                 image={{
                   src: '../images/hybrid1.JPG',
                   alt: 'Hybrid Lashes',
                   className: 'img',
-                  style: { width: '25em'}
+                  style: { width: '18em', height:'18em' }
                 }}
                 zoomImage={{
                   src: '../images/Hybrid1.JPG',
@@ -309,7 +309,7 @@ class Photos extends React.Component {
                 }}
               />
               <Divider hidden />
-             <Card.Header>
+             <Card.Header style={styles.cardHeaders}>
                Hybrid Lashes
              </Card.Header>
              <Card.Description>
@@ -318,13 +318,13 @@ class Photos extends React.Component {
             </Card.Content>
           </Card>
           <Card>
-            <Card.Content textAlign="center" image>
+            <Card.Content textAlign="center">
               <ImageZoom
                 image={{
                   src: '../images/hybrid2.JPG',
                   alt: 'Hybrid Lashes',
                   className: 'img',
-                  style: { width: '25em'}
+                  style: { width: '18em', height:'18em' }
                 }}
                 zoomImage={{
                   src: '../images/Hybrid2.JPG',
@@ -332,7 +332,7 @@ class Photos extends React.Component {
                 }}
               />
               <Divider hidden />
-             <Card.Header>
+             <Card.Header style={styles.cardHeaders}>
                Hybrid Lashes
              </Card.Header>
              <Card.Description>
@@ -342,16 +342,16 @@ class Photos extends React.Component {
           </Card>
         </Card.Group>
         <Divider />
-        <Header as="h1" textAlign="center" style={styles.headers}>Lash Lifts</Header>
+        <Header as="h1" style={styles.secondaryHeaders}>Lash Lifts</Header>
         <Card.Group centered itemsPerRow={3}>
           <Card>
-            <Card.Content textAlign="center" image>
+            <Card.Content textAlign="center">
               <ImageZoom
                 image={{
                   src: '../images/lashlift.JPG',
                   alt: 'Lash Lift',
                   className: 'img',
-                  style: { width: '25em'}
+                  style: { width: '18em', height:'18em' }
                 }}
                 zoomImage={{
                   src: '../images/lashlift.JPG',
@@ -359,7 +359,7 @@ class Photos extends React.Component {
                 }}
               />
               <Divider hidden />
-             <Card.Header style={styles.cardheaders}>
+             <Card.Header style={styles.cardHeaders}>
                Lash Lift
              </Card.Header>
              <Card.Description>
@@ -379,13 +379,15 @@ const styles = {
     fontSize: '60px',
     textAlign: 'center',
   },
-  headers: {
-    fontFamily: 'Great Vibes',
-    fontSize: '45px'
+  secondaryHeaders: {
+    fontFamily: 'Arima Madurai',
+    fontSize: '35px',
+    textAlign: 'center'
   },
   cardHeaders: {
-    fontFamily: '',
-    fontSize: '30px'
+    fontFamily: 'Arima Madurai',
+    fontSize: '30px',
+    textAlign: 'center'
   }
 }
 
