@@ -1,15 +1,12 @@
 import React from 'react';
-import { Header, Image, Grid, Button, Segment, List } from 'semantic-ui-react';
-
-
-
+import { Header, Image, Grid, Segment, List } from 'semantic-ui-react';
 
 class Aftercare extends React.Component {
   render() {
     return (
-      <div style={{ padding:'20px'}}>
+      <div className="background">
         <Header as="h1" style={styles.pageHeaders}> After Care </Header>
-          <Segment style={{ padding: '5em 2em' }} vertical>
+          <Segment style={{ marginTop: '30px', paddingBottom:'30px' }} vertical>
           <Grid container stackable verticalAlign='middle'>
             <Grid.Row>
 
@@ -26,7 +23,7 @@ class Aftercare extends React.Component {
                 <List bulleted style={{ fontSize: '1.33em' }}>
                   <List.Item>Don't get your lashes wet for 24 hours after application</List.Item>
                   <List.Item>Don't rub your eyes, pick, or pull off your new lashes</List.Item>
-                  <List.Item>Don't use any makeup remover products that are oil-based</List.Item>
+                  <List.Item>Don't use any makeup remover or products that are oil-based</List.Item>
                   <List.Item>ss</List.Item>
                 </List>
               </Segment>
@@ -36,7 +33,7 @@ class Aftercare extends React.Component {
                   bordered
                   rounded
                   size='large'
-                  src='../images/IMG_0068.jpeg'
+                  src='../images/aftercare.JPG'
                 />
               </Grid.Column>
             </Grid.Row>

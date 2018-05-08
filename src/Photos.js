@@ -1,15 +1,15 @@
 import React from 'react';
-import { Header, Card, Image, Icon, Segment, Divider, Modal, Button } from 'semantic-ui-react';
+import { Header, Card, Divider } from 'semantic-ui-react';
 import ImageZoom from 'react-medium-image-zoom';
 
 
 class Photos extends React.Component {
   render() {
     return (
-      <div style={{padding: '50px', fontFamily: 'Arsenal', fontSize: '18px'}}>
+      <div className="background">
         <Header as="h1" style={styles.pageHeaders}> Photo Gallery</Header>
         <Header as="h1" style={styles.secondaryHeaders}>Classic Lashes</Header>
-        <Card.Group centered itemsPerRow={3}>
+        <Card.Group centered itemsPerRow={3} style={{ margin: '10px'}}>
           <Card>
             <Card.Content textAlign="center">
               <ImageZoom
@@ -82,7 +82,7 @@ class Photos extends React.Component {
         </Card.Group>
         <Divider />
         <Header as="h1" style={styles.secondaryHeaders}>Volume Lashes</Header>
-        <Card.Group centered itemsPerRow={3}>
+        <Card.Group centered itemsPerRow={3} style={{ margin: '10px'}}>
           <Card>
             <Card.Content textAlign="center">
               <ImageZoom
@@ -293,7 +293,7 @@ class Photos extends React.Component {
         </Card.Group>
         <Divider />
         <Header as="h1" style={styles.secondaryHeaders} >Hybrid Lashes</Header>
-        <Card.Group centered itemsPerRow={3}>
+        <Card.Group centered itemsPerRow={3} style={{ margin: '10px'}}>
           <Card>
             <Card.Content textAlign="center">
               <ImageZoom
@@ -342,8 +342,81 @@ class Photos extends React.Component {
           </Card>
         </Card.Group>
         <Divider />
+        <Header as="h1" style={styles.secondaryHeaders} >Repairs</Header>
+        <Card.Group centered itemsPerRow={3} style={{ margin: '10px'}}>
+          <Card>
+            <Card.Content textAlign="center">
+              <ImageZoom
+                image={{
+                  src: '../images/repair1.jpg',
+                  alt: 'Hybrid Lashes',
+                  className: 'img',
+                  style: { width: '18em', height:'18em' }
+                }}
+                zoomImage={{
+                  src: '../images/Repair1.jpg',
+                  alt: 'Hybrid Lashes'
+                }}
+              />
+              <Divider hidden />
+             <Card.Header style={styles.cardHeaders}>
+               Repair
+             </Card.Header>
+             <Card.Description>
+               Before and during removal of horrible clumped lashes from sombeody else(top) vs. After a brand new set of Classic lashes (bottom)
+             </Card.Description>
+            </Card.Content>
+          </Card>
+          <Card>
+            <Card.Content textAlign="center">
+              <ImageZoom
+                image={{
+                  src: '../images/repair2.jpg',
+                  alt: 'Hybrid Lashes',
+                  className: 'img',
+                  style: { width: '18em', height:'18em' }
+                }}
+                zoomImage={{
+                  src: '../images/Repair2.jpg',
+                  alt: 'Hybrid Lashes'
+                }}
+              />
+              <Divider hidden />
+             <Card.Header style={styles.cardHeaders}>
+               Repair
+             </Card.Header>
+             <Card.Description>
+              Same client as previous pic. After removal of bad lashes from first appointment(top) vs. Two weeks after my fill(bottom). Her natural lashes are coming back in.
+             </Card.Description>
+            </Card.Content>
+          </Card>
+          <Card>
+            <Card.Content textAlign="center">
+              <ImageZoom
+                image={{
+                  src: '../images/repair3.jpg',
+                  alt: 'Hybrid Lashes',
+                  className: 'img',
+                  style: { width: '18em', height:'18em' }
+                }}
+                zoomImage={{
+                  src: '../images/Repair3.jpg',
+                  alt: 'Hybrid Lashes'
+                }}
+              />
+              <Divider hidden />
+             <Card.Header style={styles.cardHeaders}>
+               Repair
+             </Card.Header>
+             <Card.Description>
+              After my fill(top) vs. somebody else's work (bottom)
+            </Card.Description>
+            </Card.Content>
+          </Card>
+        </Card.Group>
+        <Divider />
         <Header as="h1" style={styles.secondaryHeaders}>Lash Lifts</Header>
-        <Card.Group centered itemsPerRow={3}>
+        <Card.Group centered itemsPerRow={3} style={{ margin: '10px'}}>
           <Card>
             <Card.Content textAlign="center">
               <ImageZoom
@@ -368,7 +441,6 @@ class Photos extends React.Component {
             </Card.Content>
           </Card>
         </Card.Group>
-        <Divider />
       </div>
     );
   }
@@ -378,6 +450,7 @@ const styles = {
     fontFamily: 'Great Vibes',
     fontSize: '60px',
     textAlign: 'center',
+    paddingTop: '20px'
   },
   secondaryHeaders: {
     fontFamily: 'Arima Madurai',

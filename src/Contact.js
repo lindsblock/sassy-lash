@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Header, Segment, Image, Button, Icon } from 'semantic-ui-react';
+import { Grid, Header, Segment, Image, Button, Icon, Divider } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 import GoogleMapReact from 'google-map-react';
 
@@ -15,7 +15,7 @@ class Contact extends React.Component {
 
   render() {
     return (
-      <div style={{ padding:'20px'}}>
+      <div className="background">
         <Header as="h1" style={styles.pageHeaders}> Contact </Header>
           <Segment style={{ padding: '2em 5em' }} vertical>
           <Grid container stackable verticalAlign='middle'>
@@ -25,12 +25,19 @@ class Contact extends React.Component {
                   bordered
                   rounded
                   size='large'
-                  src='../images/IMG_0068.jpeg'
+                  src='../images/salon2.JPG'
                 />
+                <Divider hidden />
+                <Image
+                  bordered
+                  rounded
+                  size='large'
+                  src='../images/salon1.JPG'
+                />
+                <Divider hidden />
               </Grid.Column>
               <Grid.Column floated="right" style={{fontFamily: 'Arsenal'}} width={8}>
                 <Segment>
-
                 <Header as='h3' style={styles.secondaryHeaders}>Address</Header>
                 <div style={{ height: '40vh', width: '50%' }}>
                 <GoogleMapReact
@@ -62,8 +69,12 @@ class Contact extends React.Component {
                   By Appointment Only. I offer weekend and night appointments.Text me for more info.
                 </p>
                 <div textAlign='center' relaxed columns={3}>
-                  <Button circular color='facebook' icon='facebook' />
-                  <Button circular color='instagram' icon='instagram' />
+                  <a href="https://www.facebook.com/sassylash7/" >
+                    <Button circular color='facebook' icon='facebook' />
+                  </a>
+                  <a href="https://www.instagram.com/sassylash7/">
+                    <Button circular color='purple' icon='instagram' />
+                  </a>
                 </div>
                 <Link to='./policies' style={{ fontSize: '1.33em'}}>View my policies</Link>
               </Segment>

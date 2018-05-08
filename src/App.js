@@ -9,9 +9,8 @@ import About from './About';
 import Aftercare from './Aftercare';
 import Faq from './Faq';
 import Policies from './Policies';
-import Consent from './Consent';
-
-
+import './background.css';
+import Testimonials from './Testimonials';
 
 class App extends Component {
   render() {
@@ -21,7 +20,7 @@ class App extends Component {
           <Switch>
             <Route exact path='/' component={Home}/>
             <Route exact path='/about' component={About}/>
-            <Route exact path='/consent' component={Consent}/>
+            <Route exact path='/testimonials' component={Testimonials}/>
             <Route exact path='/aftercare' component={Aftercare}/>
             <Route exact path='/policies' component={Policies}/>
             <Route exact path='/faq' component={Faq}/>

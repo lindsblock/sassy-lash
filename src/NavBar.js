@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Header, Segment, Button, Divider, Container, Grid, Icon, Image } from 'semantic-ui-react';
+import { Header, Segment, Container, Grid, Image } from 'semantic-ui-react';
 
 class NavBar extends React.Component {
 
@@ -14,10 +14,9 @@ class NavBar extends React.Component {
           minHeight: 150,
           backgroundPosition: 'center'
         }} vertical>
-          <Header as="h2" style={{ paddingTop: '50px', fontFamily:'Great Vibes', fontSize: '50px'}}>Sassy Lash & Esthetics</Header>
+          <Header style={{ padding: '3px', fontFamily:'Great Vibes', fontSize: '70px', marginTop: '23px'}}>Sassy Lash & Esthetics</Header>
           <Image centered src='./images/lashes3.png'/>
         </Segment>
-
         <Container>
           <Grid computer={6} tablet={3} mobile={1} divided centered>
             <Grid.Row  centered style={{marginTop:"15px" }}>
@@ -47,6 +46,11 @@ class NavBar extends React.Component {
               </Link>
               </Grid.Column>
               <Grid.Column style={{width: '125px'}}>
+              <Link to='/testimonials' centered >
+               <Header textAlign='center' as="h3" style={styles.navHeaders}>Testimonials</Header>
+              </Link>
+              </Grid.Column>
+              <Grid.Column style={{width: '125px'}}>
               <Link to='/about' centered>
                  <Header textAlign='center' as="h3" style={styles.navHeaders}>About Janessa</Header>
               </Link>
@@ -62,7 +66,6 @@ class NavBar extends React.Component {
               </Link>
               </Grid.Column>
             </Grid.Row>
-            <Divider />
           </Grid>
         </Container>
 
@@ -77,7 +80,9 @@ const styles = {
     flexDirection: 'column',
     alignItems: 'center',
     fontFamily: 'Arima Madurai',
-    marginTop:'15px'
+    marginTop:'5px',
+    marginBottom: '5px',
+    color: 'rgb(99, 99, 99)'
   }
 }
 
