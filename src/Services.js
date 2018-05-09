@@ -9,7 +9,7 @@ class Services extends React.Component {
         <Header as="h1" style={styles.pageHeaders}> Services</Header>
         <Container style={{paddingRight:'200px', paddingLeft: '200px', paddingBottom:'100px'}}>
           <Segment>
-          <Table basic='very'padded>
+          <Table basic='very' padded>
             <Table.Header>
               <Table.Row style={{ fontFamily: 'Arima Madurai', fontSize: '20px'}}>
                 <Table.HeaderCell>Eyelash Extensions</Table.HeaderCell>

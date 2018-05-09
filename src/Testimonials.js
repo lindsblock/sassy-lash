@@ -61,17 +61,17 @@ class Testimonials extends React.Component {
              <Form.Input
                 name="name"
                 required
-                value={this.state.name}
-                onChange={this.handleChange}
+                //value={this.state.name}
+              //  onChange={this.handleChange}
                 label="Name"
               />
-              {/* <Form.TextArea
+              <Form.TextArea
                 name="comment"
                 required
                 //value={this.state.comment}
                 //onChange={this.handleChange}
                 label="Comment"
-              /> */}
+              />
               <Button style={{ fontFamily: 'Arsenal'}}>Submit</Button>
           </Form>
         </Segment>

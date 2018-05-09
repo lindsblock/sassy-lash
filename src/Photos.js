@@ -110,6 +110,29 @@ class Photos extends React.Component {
             <Card.Content textAlign="center">
               <ImageZoom
                 image={{
+                  src: '../images/classicvsvolume.JPG',
+                  alt: 'Volume Lashes',
+                  className: 'img',
+                  style: { width: '18em', height:'18em' }
+                }}
+                zoomImage={{
+                  src: '../images/classicvsvolume.JPG',
+                  alt: 'Volume lashes'
+                }}
+              />
+              <Divider hidden />
+              <Card.Header style={styles.cardHeaders}>
+                Classic vs. Volume
+              </Card.Header>
+              <Card.Description>
+                Classic (top), Volume (bottom)
+              </Card.Description>
+            </Card.Content>
+          </Card>
+          <Card>
+            <Card.Content textAlign="center">
+              <ImageZoom
+                image={{
                   src: '../images/volume2halfweeks.JPG',
                   alt: 'Volume Lashes',
                   className: 'img',
@@ -287,6 +310,29 @@ class Photos extends React.Component {
               </Card.Header>
               <Card.Description>
                 4 weeks after last fill(left) vs. just after fill(right)- Volume
+              </Card.Description>
+            </Card.Content>
+          </Card>
+          <Card>
+            <Card.Content textAlign="center">
+              <ImageZoom
+                image={{
+                  src: '../images/volume10.JPG',
+                  alt: 'Volume Lashes',
+                  className: 'img',
+                  style: { width: '18em', height:'18em' }
+                }}
+                zoomImage={{
+                  src: '../images/Volume10.JPG',
+                  alt: 'Volume lashes'
+                }}
+              />
+              <Divider hidden />
+              <Card.Header style={styles.cardHeaders}>
+                Volume Lashes
+              </Card.Header>
+              <Card.Description>
+                Volume Fill
               </Card.Description>
             </Card.Content>
           </Card>

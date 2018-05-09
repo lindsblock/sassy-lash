@@ -11,21 +11,20 @@ class Policies extends React.Component {
           <Header as="h1" style={styles.secondaryHeaders}>Sassy Lash & Esthetics Consent Form</Header>
           <Header as="h1" style={styles.secondaryHeaders}>Cancellation Policy</Header>
           <List bulleted style={{ fontSize: '18px' }}>
-            <List.Item>24 hrs notice is required for all cancellations. Same day cancellations or no shows are subject to a fee due prior to rescheduling another appointment.
+            <List.Item>24 hrs notice is required for all cancellations. Same day cancellations or no shows are subject to a $25 fee due prior to rescheduling another appointment.
               Two or more violations will require pre-payment for future services and require a credit card on file. </List.Item>
           </List>
           <Header as="h1" style={styles.secondaryHeaders}>Late Policy</Header>
           <List bulleted style={{ fontSize: '18px'}}>
             <List.Item>If you are under 30 min late we can still complete the appt with the remaining time but will still be the full price of the service and your lashes may not be as full.
-              30 mins late or more will result in a same day cancellation fee and you will have to reschedule.</List.Item>
+              30 mins late or more will result in a same day cancellation fee  of $25 and you will have to reschedule.</List.Item>
           </List>
           <Header as="h1" style={styles.secondaryHeaders}>New Client Policy</Header>
           <List bulleted style={{ fontSize: '18px'}}>
             <List.Item>If you are a new client that is getting a fill an extra $10 is required for your first appointment due to the extra work required.</List.Item>
           </List>
           <Header as="h1" style={styles.secondaryHeaders}>Know Before Your Appointment</Header>
-          <p>Although every precaution will be taken to ensure your safety and well being before, during and after your
-            eyelash extension application, please be aware of the following information. Please fill out bottom section of this form after reading.</p>
+          <p>Please be aware of the following information and fill out the bottom section of this form after reading.</p>
           <List bulleted style={{ fontSize: '18px'}}>
             <List.Item> I understand that because of my natural lash cycle I will need to maintain my extension every 2-4 weeks to keep them full.</List.Item>
             <List.Item> I understand that while every attempt will be made to provide me with the length and fullness I have
@@ -39,18 +38,18 @@ class Policies extends React.Component {
           <p>Please fill out the following information.</p>
           <Form style={{fontFamily:'Arsenal', fontSize: '18px'}}>
             <Form.Input
-               name="first_name"
+               name="full_name"
                required
-               //value={first_name}
+               //value={full_name}
                // onChange={this.handleChange}
-               label="First Name"
+               label="Full Name"
              />
             <Form.Input
-               name="last_name"
+               name="phone"
                required
-               //value={last_name}
+               //value={phone}
                // onChange={this.handleChange}
-               label="Last Name"
+               label="Phone Number"
              />
             <Form.TextArea
                name="conditions"

@@ -12,7 +12,6 @@ class Contact extends React.Component {
     zoom: 16
   };
 
-
   render() {
     return (
       <div className="background">
@@ -47,7 +46,7 @@ class Contact extends React.Component {
                   <Icon marker
                     lat={40.5573}
                     lng={111.8904}
-                    text={'Kreyser Avrora'}
+                    text={'Arsenal'}
                   />
                 </GoogleMapReact>
               </div>
@@ -59,6 +58,9 @@ class Contact extends React.Component {
                 <Header as='h3' style={styles.secondaryHeaders}>Phone</Header>
                 <p style={{ fontSize: '1.33em' }}>
                   (801) 688-6823
+                </p>
+                <p style={{ fontSize: '1.33em' }}>
+                  * The best way to get ahold of me for an appointment is through text
                 </p>
                 <Header as='h3' style={styles.secondaryHeaders}>Email</Header>
                 <p style={{ fontSize: '1.33em' }}>
@@ -76,6 +78,7 @@ class Contact extends React.Component {
                     <Button circular color='purple' icon='instagram' />
                   </a>
                 </div>
+                <br />
                 <Link to='./policies' style={{ fontSize: '1.33em'}}>View my policies</Link>
               </Segment>
               </Grid.Column>
