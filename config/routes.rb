@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   namespace :api do
-    #API routes
+    post 'mails/consent', to: 'mails#consent'
   end
 
   #NOTHING BELOW HERE

@@ -1,15 +1,32 @@
 import React from 'react';
 import { Header, Button, Segment, Form, Checkbox, Divider, List } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
+import axios from 'axios'
 
 class Policies extends React.Component {
+  state = { name: '', phone: '', conditions: '' }
+
+  handleChange = (e) => {
+    const { value, name } = e.target
+    this.setState({ [name]: value })
+  }
+
+  handleSubmit = (e) => {
+    e.preventDefault()
+    axios.post('/api/mails/consent', { ...this.state })
+      .then( () => {
+        //TODO flash message
+        this.setState({ name: '', phone: '', conditions: '' })
+      })
+  }
+
   render() {
+    const { name, phone, conditions } = this.state
     return (
       <div className="background">
         <Header as="h1" style={styles.pageHeaders}> Policies and Consent Form</Header>
         <Segment style={{ fontFamily: 'Arsenal', fontSize: '18px', margin: '50px'}}>
-          <Header as="h1" style={styles.secondaryHeaders}>Sassy Lash & Esthetics Consent Form</Header>
-          <Header as="h1" style={styles.secondaryHeaders}>Cancellation Policy</Header>
+          <Header as="h1" style={styles.secondaryHeaders}>Sassy Lash & Esthetics Consent Form</Header> <Header as="h1" style={styles.secondaryHeaders}>Cancellation Policy</Header>
           <List bulleted style={{ fontSize: '18px' }}>
             <List.Item>24 hrs notice is required for all cancellations. Same day cancellations or no shows are subject to a $25 fee due prior to rescheduling another appointment.
               Two or more violations will require pre-payment for future services and require a credit card on file. </List.Item>
@@ -36,30 +53,30 @@ class Policies extends React.Component {
               and will hold her harmless and nameless from any liability that may result from this treatment.</List.Item>
           </List>
           <p>Please fill out the following information.</p>
-          <Form style={{fontFamily:'Arsenal', fontSize: '18px'}}>
+          <Form onSubmit={this.handleSubmit} style={{fontFamily:'Arsenal', fontSize: '18px'}}>
             <Form.Input
-               name="full_name"
+               name="name"
                required
-               //value={full_name}
-               // onChange={this.handleChange}
+               value={name}
+               onChange={this.handleChange}
                label="Full Name"
              />
             <Form.Input
                name="phone"
                required
-               //value={phone}
-               // onChange={this.handleChange}
+               value={phone}
+               onChange={this.handleChange}
                label="Phone Number"
              />
             <Form.TextArea
                name="conditions"
                required
-               //value={last_name}
-               // onChange={this.handleChange}
+               value={conditions}
+               onChange={this.handleChange}
                label="Conditions or Allergies"
              />
              <p>BY CHECKING THE BOX BELOW YOU AGREE TO THE ABOVE TERMS AND POLICIES. </p>
-             <Checkbox style={{fontFamily:'Arsenal'}} label='I Agree' />
+             <Checkbox  required style={{fontFamily:'Arsenal'}} label='I Agree' />
              <Divider hidden/>
              <Button style={{ fontFamily: 'Arsenal'}}>Submit</Button>
           </Form>

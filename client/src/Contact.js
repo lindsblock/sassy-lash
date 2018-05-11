@@ -1,16 +1,8 @@
 import React from 'react';
 import { Grid, Header, Segment, Image, Button, Icon, Divider } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
-import GoogleMapReact from 'google-map-react';
 
 class Contact extends React.Component {
-  static defaultProps = {
-    center: {
-      lat: 40.5573,
-      lng: -111.8904
-    },
-    zoom: 16
-  };
 
   render() {
     return (
@@ -38,18 +30,15 @@ class Contact extends React.Component {
               <Grid.Column floated="right" style={{fontFamily: 'Arsenal'}} width={8}>
                 <Segment>
                 <Header as='h3' style={styles.secondaryHeaders}>Address</Header>
-                <div style={{ height: '40vh', width: '50%' }}>
-                <GoogleMapReact
-                  defaultCenter={this.props.center}
-                  defaultZoom={this.props.zoom}
-                >
-                  <Icon marker
-                    lat={40.5573}
-                    lng={111.8904}
-                    text={'Arsenal'}
-                  />
-                </GoogleMapReact>
-              </div>
+                <div >
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3031.286692348012!2d-111.89259208519414!3d40.55734577934901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x875287b84be435a1%3A0x10f2dbed158e5c79!2sImage+Studios+360+Sandy!5e0!3m2!1sen!2sus!4v1525908487567"
+                    width="350"
+                    height="250"
+                    frameborder="0"
+                    allowfullscreen>
+                  </iframe>
+                </div>
                 <p style={{ fontSize: '1.33em' }}>
                   <p>Image Studios Sandy</p>
                   10691 S State Street, #107

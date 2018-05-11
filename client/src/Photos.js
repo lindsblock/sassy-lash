@@ -71,6 +71,76 @@ class Photos extends React.Component {
                 }}
               />
               <Divider hidden />
+
+              <Card.Header style={styles.cardHeaders}>
+                Classic Lashes
+              </Card.Header>
+              <Card.Description>
+              Full set before and after- Classic
+              </Card.Description>
+            </Card.Content>
+          </Card>
+          <Card>
+            <Card.Content textAlign="center">
+              <ImageZoom
+                image={{
+                  src: '../images/classic4.jpg',
+                  alt: 'Classic Lashes',
+                  className: 'img',
+                  style: { width: '18em', height:'18em'}
+                }}
+                zoomImage={{
+                  src: '../images/classic4.jpg',
+                  alt: 'Classic lashes'
+                }}
+              />
+              <Divider hidden />
+              <Card.Header style={styles.cardHeaders}>
+                Classic Lashes
+              </Card.Header>
+              <Card.Description>
+              Full set before and after- Classic
+              </Card.Description>
+            </Card.Content>
+          </Card>
+          <Card>
+            <Card.Content textAlign="center">
+              <ImageZoom
+                image={{
+                  src: '../images/classic5.jpg',
+                  alt: 'Classic Lashes',
+                  className: 'img',
+                  style: { width: '18em', height:'18em'}
+                }}
+                zoomImage={{
+                  src: '../images/classic5.jpg',
+                  alt: 'Classic lashes'
+                }}
+              />
+              <Divider hidden />
+              <Card.Header style={styles.cardHeaders}>
+                Classic Lashes
+              </Card.Header>
+              <Card.Description>
+              Full set before and after- Classic
+              </Card.Description>
+            </Card.Content>
+          </Card>
+          <Card>
+            <Card.Content textAlign="center">
+              <ImageZoom
+                image={{
+                  src: '../images/classic6.jpg',
+                  alt: 'Classic Lashes',
+                  className: 'img',
+                  style: { width: '18em', height:'18em'}
+                }}
+                zoomImage={{
+                  src: '../images/classic6.jpg',
+                  alt: 'Classic lashes'
+                }}
+              />
+              <Divider hidden />
               <Card.Header style={styles.cardHeaders}>
                 Classic Lashes
               </Card.Header>
@@ -456,6 +526,29 @@ class Photos extends React.Component {
              </Card.Header>
              <Card.Description>
               After my fill(top) vs. somebody else's work (bottom)
+            </Card.Description>
+            </Card.Content>
+          </Card>
+          <Card>
+            <Card.Content textAlign="center">
+              <ImageZoom
+                image={{
+                  src: '../images/repair4.jpg',
+                  alt: 'Hybrid Lashes',
+                  className: 'img',
+                  style: { width: '18em', height:'18em' }
+                }}
+                zoomImage={{
+                  src: '../images/Repair4.jpg',
+                  alt: 'Hybrid Lashes'
+                }}
+              />
+              <Divider hidden />
+             <Card.Header style={styles.cardHeaders}>
+               Removal
+             </Card.Header>
+             <Card.Description>
+              After removal of lashes that have been on for years. Her natural lashes are still healthy!
             </Card.Description>
             </Card.Content>
           </Card>

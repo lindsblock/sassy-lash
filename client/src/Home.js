@@ -5,6 +5,7 @@ import Slider from "react-slick";
 
 class Home extends React.Component {
   render() {
+    
     var settings = {
       dots: true,
       infinite: true,
@@ -92,7 +93,6 @@ class Home extends React.Component {
             </Grid>
           </Container>
         </Segment>
-      {/* </Segment> */}
       </div>
     );
   }
