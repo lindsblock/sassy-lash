@@ -5,7 +5,7 @@ import Slider from "react-slick";
 
 class Home extends React.Component {
   render() {
-    
+
     var settings = {
       dots: true,
       infinite: true,
@@ -15,12 +15,14 @@ class Home extends React.Component {
     };
     return (
       <div className="background">
+        <Container>
           <Header as="h1" style={styles.pageHeaders}>Professional Eyelash Extensions</Header>
-          <Segment style={{ padding: '2em 2em' }} vertical>
+        </Container>
+          <Image centered size="medium" src='../images/elegant2.png'/>
+          <Segment  style={{ padding: '2em 2em' }} vertical>
             <Grid container stackable >
-              <Grid.Row>
+              <Grid.Row verticalAlign="middle">
                 <Grid.Column style={{fontFamily: 'Arsenal'}} width={9}>
-                  <Image size='medium' centered src='../images/elegant.png'/>
                   <Segment style={{ margin: '1px'}}>
                   <Header as='h3' textAlign="center" style={styles.secondaryHeaders}>Why Choose Sassy Lash?</Header>
                     <p style={{ fontSize: '1.33em' }}>
@@ -34,9 +36,10 @@ class Home extends React.Component {
                 </Grid.Column>
                 <Grid.Column floated='right' width={6}>
                   <Image
+                    centered
                     bordered
                     rounded
-                    size='large'
+                    size='medium'
                     src='../images/volume8.JPG'
                   />
                 </Grid.Column>
@@ -54,7 +57,7 @@ class Home extends React.Component {
                   <div>
                     <p>(801) 688-6823</p>
                     <p>10691 S State Street, #107<br />Sandy, Utah 84070</p>
-                    <div textAlign='center' relaxed columns={3}>
+                    <div  relaxed="true" columns={3}>
                       <a href="https://www.facebook.com/sassylash7/" >
                       <Button circular color='facebook' icon='facebook' />
                       </a>
@@ -102,7 +105,7 @@ const styles = {
     fontFamily: 'Great Vibes',
     fontSize: '60px',
     textAlign: 'center',
-    paddingTop: '20px'
+    paddingTop: '20px',
   },
   secondaryHeaders: {
     fontFamily: 'Arima Madurai',

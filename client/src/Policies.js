@@ -1,6 +1,5 @@
 import React from 'react';
 import { Header, Button, Segment, Form, Checkbox, Divider, List } from 'semantic-ui-react';
-import { Link } from 'react-router-dom';
 import axios from 'axios'
 
 class Policies extends React.Component {

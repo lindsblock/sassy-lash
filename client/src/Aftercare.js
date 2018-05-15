@@ -19,7 +19,6 @@ class Aftercare extends React.Component {
           <Segment style={{ marginTop: '30px', paddingBottom:'30px' }} vertical>
           <Grid container stackable verticalAlign='middle'>
             <Grid.Row>
-
               <Grid.Column floated="left" style={{fontFamily: 'Arsenal'}} width={8}>
                 <Segment>
                 <Header as='h3' style={styles.secondaryHeaders}>Do's</Header>
@@ -32,6 +31,7 @@ class Aftercare extends React.Component {
                 <Header as='h3' style={styles.secondaryHeaders}>Dont's</Header>
                 <List bulleted style={{ fontSize: '1.33em' }}>
                   <List.Item>Don't get your lashes wet for 24 hours after application.</List.Item>
+                  <List.Item>Don't use mascara on your eyelash extensions.</List.Item>
                   <List.Item>Don't rub your eyes, pick, or pull off your new lashes.</List.Item>
                   <List.Item>Don't use any makeup remover or products that are oil-based.</List.Item>
                   <List.Item>Don't sleep with your lashes touching your pillow. Try to stay off of the side of your face.</List.Item>
@@ -54,6 +54,14 @@ class Aftercare extends React.Component {
                     rounded
                     size='large'
                     src='../images/aftercare2.jpg'
+                  />
+                </div>
+                  <div>
+                  <Image
+                    bordered
+                    rounded
+                    size='large'
+                    src='../images/aftercare3.jpg'
                   />
                 </div>
                 </Slider>

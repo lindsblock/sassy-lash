@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header, Segment, Divider } from 'semantic-ui-react';
+import { Header, Segment, Divider, Image } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 
 
@@ -16,13 +16,24 @@ class Faq extends React.Component {
             <p>Full sets take about 90 min and fills are 60 min</p>
             <Divider />
             <Header as="h1" style={styles.secondaryHeaders}>Will eyelash extensions harm my natural eyelashes?</Header>
-            <p>No as long as they aren't picked or rubbed. They are applied individually and just grow out with your natural lashes.</p>
+              <p>No as long as they aren't picked or rubbed. They are applied individually and just grow out with
+                your natural lashes.This is an example of a client when we removed her eyelash extensions that had
+                been on for years. Her natural lashes remain full and healthy!
+              </p>
+              <Image centered src="./images/repair4.JPG" size="small"/>
+
             <Divider />
             <Header as="h1" style={styles.secondaryHeaders}>How do I prepare for my eyelash extension appointment?</Header>
             <p>Come with a clean face and clean lashes.</p>
             <Divider />
             <Header as="h1" style={styles.secondaryHeaders}>What is the difference between Classic and Volume eyelash extensions?</Header>
-            <p>Classic lashes have a 1 extension to 1 natural lash application process. They are great for people who want a natural look and have plenty of natural lashes. Volume lashes are a fan of lighter weight lashes that are applied to the natural lash. They give you a much more dramatic look. </p>
+            <div style={{overflow:'auto'}}>
+              <Image style={{float: 'left', margin:"10px"}} src="./images/classicvsvolume.JPG"  size="small" verticalAlign="middle" />
+              <p>Classic lashes have a 1 extension to 1 natural lash application process. They are great for people who want a natural
+                look and have plenty of natural lashes. Volume lashes are a fan of lighter weight lashes that are applied to the natural lash.
+                They give you a much more dramatic look.
+              </p>
+            </div>
             <Divider />
             <Header as="h1" style={styles.secondaryHeaders}>How do I take care of my eyelash extensions?</Header>
             <p>See my <Link to='./aftercare'>after care</Link> page</p>

@@ -18,50 +18,50 @@ class NavBar extends React.Component {
           <Image centered src='./images/lashes3.png'/>
         </Segment>
         <Container>
-          <Grid computer={6} tablet={3} mobile={1} divided centered>
+          <Grid stackable computer={6} tablet={3} mobile={1} divided centered>
             <Grid.Row  centered style={{marginTop:"15px" }}>
               <Grid.Column style={{width: '125px'}}>
-              <Link to='/'  centered >
+              <Link to='/'>
                    <Header as="h3" style={styles.navHeaders}>Home</Header>
               </Link>
               </Grid.Column>
               <Grid.Column style={{width: '125px'}}>
-              <Link to='/services' centered >
+              <Link to='/services'>
                  <Header as="h3"  textAlign="center" style={styles.navHeaders}>Services & Pricing</Header>
               </Link>
               </Grid.Column>
               <Grid.Column style={{width: '125px'}}>
-              <Link to='/photos' centered >
+              <Link to='/photos'>
                <Header textAlign='center' as="h3"  style={styles.navHeaders}>Photo Gallery</Header>
               </Link>
               </Grid.Column>
               <Grid.Column style={{width: '125px'}}>
-              <Link to='/faq' centered >
+              <Link to='/faq'>
                <Header textAlign='center' as="h3"  style={styles.navHeaders}>FAQ</Header>
               </Link>
               </Grid.Column>
               <Grid.Column style={{width: '125px'}}>
-              <Link to='/aftercare' centered >
+              <Link to='/aftercare'>
                <Header textAlign='center' as="h3" style={styles.navHeaders}>After Care</Header>
               </Link>
               </Grid.Column>
               <Grid.Column style={{width: '125px'}}>
-              <Link to='/testimonials' centered >
+              <Link to='/testimonials'>
                <Header textAlign='center' as="h3" style={styles.navHeaders}>Testimonials</Header>
               </Link>
               </Grid.Column>
               <Grid.Column style={{width: '125px'}}>
-              <Link to='/about' centered>
+              <Link to='/about'>
                  <Header textAlign='center' as="h3" style={styles.navHeaders}>About Janessa</Header>
               </Link>
               </Grid.Column>
               <Grid.Column style={{width: '125px'}}>
-              <Link to='/policies' centered >
+              <Link to='/policies'>
                  <Header textAlign='center' as="h3" style={styles.navHeaders}>Policies & Consent</Header>
               </Link>
               </Grid.Column>
               <Grid.Column style={{width: '125px'}}>
-              <Link to='/contact' centered>
+              <Link to='/contact'>
                  <Header textAlign='center' as="h3" style={styles.navHeaders}>Contact</Header>
               </Link>
               </Grid.Column>

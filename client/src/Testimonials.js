@@ -1,6 +1,5 @@
 import React from 'react';
 import { Image, Header, Segment, Container, Button, Divider, Form } from 'semantic-ui-react';
-import { Link } from 'react-router-dom';
 
 class Testimonials extends React.Component {
   state = {
