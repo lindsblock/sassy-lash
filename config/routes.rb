@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
   namespace :api do
+    resources :testimonials
+  end
+
+  namespace :api do
     post 'mails/consent', to: 'mails#consent'
   end
 
