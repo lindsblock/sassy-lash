@@ -1,11 +1,18 @@
 import React from 'react';
-import { Image, Header, Segment, Container, Button, Divider, Form } from 'semantic-ui-react';
+import { Image, Header, Segment, Container, Button, Divider, Form, Card, Grid } from 'semantic-ui-react';
 import axios from 'axios';
 
 class Testimonials extends React.Component {
   state = {
-    name: '',
-    comment: '',
+    testimonials: [{
+      name: '',
+      comment: '',
+    }]
+  }
+
+  componentDidMount = () => {
+    axios.get('api/testimonials')
+    .then( res => this.setState({ testimonials: res.data }) )
   }
 
   handleChange = (e) => {
@@ -15,9 +22,10 @@ class Testimonials extends React.Component {
 
   handleSubmit = (e) => {
     e.preventDefault()
-    axios.post('api/testimonials/create', {...this.state })
+    axios.post('api/testimonials', {...this.state })
     .then( () => {
-      this.setState({ name: '', comment:'', showForm: false })
+      axios.get('api/testimonials')
+    .then( res => this.setState({ testimonials: res.data, showForm: false, name: '', comment: '' }) )
     })
   }
 
@@ -29,6 +37,7 @@ class Testimonials extends React.Component {
 
   render() {
     const { name, comment, showForm } = this.state;
+    const { testimonials } = this.state;
     return (
       <div className="background">
         <Header as="h1" style={styles.pageHeaders}> Testimonials</Header>
@@ -76,21 +85,18 @@ class Testimonials extends React.Component {
                   value={comment}
                   onChange={this.handleChange}
                   label="Comment"
-                />
+                  />
                 <Button style={{ fontFamily: 'Arsenal'}}>Submit</Button>
               </Form>
             </Segment>
           :
           <div>
-            <Segment textAlign="left" style={{ margin: '50px'}}>
-            <p>{name.map}</p>
-            <p>"janessa is the best!" ~ Lindsay B. </p>
-             <Divider />
-             <p>"janessa is the best!" ~ Lindsay B. </p>
-              <Divider />
-            <p>"janessa is the best!" ~ Lindsay B. </p>
-            </Segment>
-          </div>
+             <Segment textAlign="left" style={{ margin: '50px'}}>
+               { testimonials.map( t =>
+             <p key={t.id}>"{t.comment}" ~ {t.name} <Divider /> </p>
+               )}
+             </Segment>
+           </div>
         }
         </Container>
       </div>
@@ -109,6 +115,10 @@ const styles = {
     fontSize: '35px'
   }
 }
+
+// const mapStateToProps = (state) => {
+//   return { testimonials: state.testimonials }
+// }
 
 
 export default Testimonials;

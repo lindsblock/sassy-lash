@@ -9,7 +9,7 @@ class Photos extends React.Component {
       <div className="background">
         <Header as="h1" style={styles.pageHeaders}> Photo Gallery</Header>
         <Header as="h1" style={styles.secondaryHeaders}>Classic Lashes</Header>
-        <Card.Group centered itemsPerRow={3} style={{ margin: '10px'}}>
+        <Card.Group stackable centered itemsPerRow={3} style={{ margin: '10px'}}>
           <Card>
             <Card.Content textAlign="center">
               <ImageZoom
@@ -152,7 +152,7 @@ class Photos extends React.Component {
         </Card.Group>
         <Divider />
         <Header as="h1" style={styles.secondaryHeaders}>Volume Lashes</Header>
-        <Card.Group centered itemsPerRow={3} style={{ margin: '10px'}}>
+        <Card.Group stackable centered itemsPerRow={3} style={{ margin: '10px'}}>
           <Card>
             <Card.Content textAlign="center">
               <ImageZoom
@@ -409,7 +409,7 @@ class Photos extends React.Component {
         </Card.Group>
         <Divider />
         <Header as="h1" style={styles.secondaryHeaders} >Hybrid Lashes</Header>
-        <Card.Group centered itemsPerRow={3} style={{ margin: '10px'}}>
+        <Card.Group stackable centered itemsPerRow={3} style={{ margin: '10px'}}>
           <Card>
             <Card.Content textAlign="center">
               <ImageZoom
@@ -459,19 +459,19 @@ class Photos extends React.Component {
         </Card.Group>
         <Divider />
         <Header as="h1" style={styles.secondaryHeaders} >Repairs</Header>
-        <Card.Group centered itemsPerRow={3} style={{ margin: '10px'}}>
+        <Card.Group  stackable centered itemsPerRow={3} style={{ margin: '10px'}}>
           <Card>
             <Card.Content textAlign="center">
               <ImageZoom
                 image={{
                   src: '../images/repair1.jpg',
-                  alt: 'Hybrid Lashes',
+                  alt: 'Repair',
                   className: 'img',
                   style: { width: '18em', height:'18em' }
                 }}
                 zoomImage={{
                   src: '../images/Repair1.jpg',
-                  alt: 'Hybrid Lashes'
+                  alt: 'Repair'
                 }}
               />
               <Divider hidden />
@@ -488,13 +488,13 @@ class Photos extends React.Component {
               <ImageZoom
                 image={{
                   src: '../images/repair2.jpg',
-                  alt: 'Hybrid Lashes',
+                  alt: 'Repair',
                   className: 'img',
                   style: { width: '18em', height:'18em' }
                 }}
                 zoomImage={{
                   src: '../images/Repair2.jpg',
-                  alt: 'Hybrid Lashes'
+                  alt: 'Repair'
                 }}
               />
               <Divider hidden />
@@ -511,13 +511,13 @@ class Photos extends React.Component {
               <ImageZoom
                 image={{
                   src: '../images/repair3.jpg',
-                  alt: 'Hybrid Lashes',
+                  alt: 'Repair',
                   className: 'img',
                   style: { width: '18em', height:'18em' }
                 }}
                 zoomImage={{
                   src: '../images/Repair3.jpg',
-                  alt: 'Hybrid Lashes'
+                  alt: 'Repair'
                 }}
               />
               <Divider hidden />
@@ -534,13 +534,13 @@ class Photos extends React.Component {
               <ImageZoom
                 image={{
                   src: '../images/repair4.jpg',
-                  alt: 'Hybrid Lashes',
+                  alt: 'Repair',
                   className: 'img',
                   style: { width: '18em', height:'18em' }
                 }}
                 zoomImage={{
                   src: '../images/Repair4.jpg',
-                  alt: 'Hybrid Lashes'
+                  alt: 'Repair'
                 }}
               />
               <Divider hidden />
@@ -555,7 +555,7 @@ class Photos extends React.Component {
         </Card.Group>
         <Divider />
         <Header as="h1" style={styles.secondaryHeaders}>Lash Lifts</Header>
-        <Card.Group centered itemsPerRow={3} style={{ margin: '10px'}}>
+        <Card.Group stackable centered itemsPerRow={3} style={{ margin: '10px'}}>
           <Card>
             <Card.Content textAlign="center">
               <ImageZoom

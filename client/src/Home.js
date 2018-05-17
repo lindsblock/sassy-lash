@@ -19,18 +19,24 @@ class Home extends React.Component {
           <Header as="h1" style={styles.pageHeaders}>Professional Eyelash Extensions</Header>
         </Container>
           <Image centered size="medium" src='../images/elegant2.png'/>
-          <Segment  style={{ padding: '2em 2em' }} vertical>
+          <Segment  style={{ padding: '2em 2em', paddingBottom:'100px' }} vertical>
             <Grid container stackable >
               <Grid.Row verticalAlign="middle">
                 <Grid.Column style={{fontFamily: 'Arsenal'}} width={9}>
                   <Segment style={{ margin: '1px'}}>
+                  <Header as='h3' textAlign="center" style={styles.secondaryHeaders}>Boost Your Confidence With Eyelash Extensions!</Header>
+                    <p style={{ fontSize: '1.33em' }}>
+                      If you are tired of spending so much time putting make up on in the morning and dealing
+                      with mascara then lash extensions are a great solution!!
+                      Wake up feeling beautiful before you even put any makeup on! Feel pretty while on vacation
+                      playing in the water, or at the gym before you get ready!
+                      Be picture ready always! Lash extensions make your eyes pop like no mascara can!.
+                    </p>
                   <Header as='h3' textAlign="center" style={styles.secondaryHeaders}>Why Choose Sassy Lash?</Header>
                     <p style={{ fontSize: '1.33em' }}>
-                      Janessa has been doing lashes for years bla bla bla. This is where we have a long paragraph talking about how wonderful eyelash extensions are and how you look way better with them because without them you are ugly.
-                    </p>
-                  <Header as='h3' textAlign="center" style={styles.secondaryHeaders}>Boost Your Confidence!</Header>
-                    <p style={{ fontSize: '1.33em' }}>
-                      Janessa has been doing lashes for years bla bla bla. This is where we have a long paragraph talking about how wonderful eyelash extensions are and how you look way better with them because without them you are ugly.
+                      I'm passionate about not only helping women feel more confident and beautiful
+                      but also keeping your natural lashes healthy and strong!
+                       It's not just about applying extensions but making each set of eyes a masterpiece!
                     </p>
                   </Segment>
                 </Grid.Column>
@@ -46,7 +52,7 @@ class Home extends React.Component {
               </Grid.Row>
             </Grid>
           </Segment>
-        <Segment inverted vertical style={{ padding: '2em 0em',backgroundColor: "rgb(116, 116, 116)", fontFamily: 'Arsenal' }}>
+        <Segment inverted vertical style={{ padding: '2em 0em',backgroundColor: "rgb(156, 156, 156)", fontFamily: 'Arsenal' }}>
           <Container>
             <Grid divided inverted stackable>
               <Grid.Row>
@@ -79,16 +85,16 @@ class Home extends React.Component {
                         <h3 style={{fontFamily: 'Arsenal'}}>"If you want precision and natural looking lashes you must go to Sassy Lash!" - Debbie W. </h3>
                       </div>
                       <div>
-                        <h3 style={{fontFamily: 'Arsenal'}}>3</h3>
+                        <h3 style={{fontFamily: 'Arsenal'}}>Another Testimonial</h3>
                       </div>
                       <div>
-                        <h3 style={{fontFamily: 'Arsenal'}}>4</h3>
+                        <h3 style={{fontFamily: 'Arsenal'}}>Another Testimonial</h3>
                       </div>
                       <div>
-                        <h3 style={{fontFamily: 'Arsenal'}}>5</h3>
+                        <h3 style={{fontFamily: 'Arsenal'}}>Another Testimonial</h3>
                       </div>
                       <div>
-                        <h3 style={{fontFamily: 'Arsenal'}}>6</h3>
+                        <h3 style={{fontFamily: 'Arsenal'}}>Another Testimonial</h3>
                       </div>
                     </Slider>
                 </Grid.Column>

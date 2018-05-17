@@ -38,10 +38,11 @@ class Aftercare extends React.Component {
                 </List>
               </Segment>
               </Grid.Column>
-              <Grid.Column  width={6}>
+              <Grid.Column width={6}>
                 <Slider {...settings}>
                   <div>
                   <Image
+                    centered
                     bordered
                     rounded
                     size='large'
@@ -51,6 +52,7 @@ class Aftercare extends React.Component {
                   <div>
                   <Image
                     bordered
+                    centered
                     rounded
                     size='large'
                     src='../images/aftercare2.jpg'
@@ -59,6 +61,7 @@ class Aftercare extends React.Component {
                   <div>
                   <Image
                     bordered
+                    centered
                     rounded
                     size='large'
                     src='../images/aftercare3.jpg'

@@ -57,15 +57,14 @@ class Contact extends React.Component {
                 <p style={{ fontSize: '1.33em' }}>
                   By Appointment Only. I offer weekend and night appointments.Text me for more info.
                 </p>
-                <div relaxed="true" columns={3}>
+                  <Header as='h3' style={styles.secondaryHeaders}>Find Me On Facebook & Instagram</Header>
                   <a href="https://www.facebook.com/sassylash7/" >
                     <Button circular color='facebook' icon='facebook' />
                   </a>
                   <a href="https://www.instagram.com/sassylash7/">
                     <Button circular color='purple' icon='instagram' />
                   </a>
-                </div>
-                <br />
+                <Divider hidden />
                 <p style={{ fontSize: '1.33em' }}> Please view my policies and sign my consent form before your appointment
                 <Link to='./policies' style={{ fontSize: '1em'}}> HERE.</Link>
                 </p>

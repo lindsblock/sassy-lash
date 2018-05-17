@@ -75,7 +75,7 @@ class Policies extends React.Component {
                label="Conditions or Allergies"
              />
              <p>BY CHECKING THE BOX BELOW YOU AGREE TO THE ABOVE TERMS AND POLICIES. </p>
-             <Checkbox  required style={{fontFamily:'Arsenal'}} label='I Agree' />
+             <Checkbox style={{fontFamily:'Arsenal'}} label='I Agree' />
              <Divider hidden/>
              <Button style={{ fontFamily: 'Arsenal'}}>Submit</Button>
           </Form>

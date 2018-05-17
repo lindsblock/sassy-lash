@@ -43,7 +43,6 @@ class Faq extends React.Component {
             <Divider />
             <Header as="h1" style={styles.secondaryHeaders}>How long does a lash lift last?</Header>
             <p>6-8 weeks</p>
-            <Divider />
         </Segment>
     </div>
     );
