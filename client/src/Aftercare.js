@@ -17,8 +17,8 @@ class Aftercare extends React.Component {
       <div className="background">
         <Header as="h1" style={styles.pageHeaders}> After Care </Header>
           <Segment style={{ marginTop: '30px', paddingBottom:'30px' }} vertical>
-          <Grid container stackable verticalAlign='middle'>
-            <Grid.Row>
+          <Grid container stackable>
+            <Grid.Row verticalAlign="middle">
               <Grid.Column floated="left" style={{fontFamily: 'Arsenal'}} width={8}>
                 <Segment>
                 <Header as='h3' style={styles.secondaryHeaders}>Do's</Header>

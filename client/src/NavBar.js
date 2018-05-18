@@ -9,7 +9,7 @@ class NavBar extends React.Component {
       <div>
         <Segment textAlign="center" style={{
           backgroundImage:`url(https://images.pexels.com/photos/751374/pexels-photo-751374.jpeg?cs=srgb&dl=blur-bokeh-bright-751374.jpg&fm=jpg)`,
-          backgroundSize: " cover ",
+          backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
           minHeight: 150,
           backgroundPosition: 'center'
@@ -18,8 +18,8 @@ class NavBar extends React.Component {
           <Image centered src='./images/lashes3.png'/>
         </Segment>
         <Container>
-          <Grid stackable computer={6} tablet={3} mobile={1} divided centered>
-            <Grid.Row  centered style={{marginTop:"15px" }}>
+          <Grid  stackable computer={6} tablet={3} mobile={1} divided centered>
+            <Grid.Row  style={{marginTop: '10px', marginBottom: '10px' }}>
               <Grid.Column style={{width: '125px'}}>
               <Link to='/'>
                    <Header as="h3" style={styles.navHeaders}>Home</Header>
@@ -27,12 +27,12 @@ class NavBar extends React.Component {
               </Grid.Column>
               <Grid.Column style={{width: '125px'}}>
               <Link to='/services'>
-                 <Header as="h3"  textAlign="center" style={styles.navHeaders}>Services & Pricing</Header>
+                 <Header as="h3"  textAlign="center" style={styles.navHeaders}>Services</Header>
               </Link>
               </Grid.Column>
               <Grid.Column style={{width: '125px'}}>
               <Link to='/photos'>
-               <Header textAlign='center' as="h3"  style={styles.navHeaders}>Photo Gallery</Header>
+               <Header textAlign='center' as="h3"  style={styles.navHeaders}>Photos</Header>
               </Link>
               </Grid.Column>
               <Grid.Column style={{width: '125px'}}>
@@ -52,12 +52,12 @@ class NavBar extends React.Component {
               </Grid.Column>
               <Grid.Column style={{width: '125px'}}>
               <Link to='/about'>
-                 <Header textAlign='center' as="h3" style={styles.navHeaders}>About Janessa</Header>
+                 <Header textAlign='center' as="h3" style={styles.navHeaders}>About</Header>
               </Link>
               </Grid.Column>
               <Grid.Column style={{width: '125px'}}>
               <Link to='/policies'>
-                 <Header textAlign='center' as="h3" style={styles.navHeaders}>Policies & Consent</Header>
+                 <Header textAlign='center' as="h3" style={styles.navHeaders}>Policies</Header>
               </Link>
               </Grid.Column>
               <Grid.Column style={{width: '125px'}}>
@@ -68,7 +68,6 @@ class NavBar extends React.Component {
             </Grid.Row>
           </Grid>
         </Container>
-
     </div>
     )
   }
@@ -82,7 +81,7 @@ const styles = {
     fontFamily: 'Arima Madurai',
     marginTop:'5px',
     marginBottom: '5px',
-    color: 'rgb(99, 99, 99)'
+    color: 'rgb(99, 99, 99)',
   }
 }
 

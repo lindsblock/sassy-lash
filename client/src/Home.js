@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header, Segment, Button, Container, Grid, Image } from 'semantic-ui-react';
+import { Header, Segment, Button, Container, Grid, Image, Divider } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 import Slider from "react-slick";
 
@@ -18,8 +18,8 @@ class Home extends React.Component {
         <Container>
           <Header as="h1" style={styles.pageHeaders}>Professional Eyelash Extensions</Header>
         </Container>
-          <Image centered size="medium" src='../images/elegant2.png'/>
-          <Segment  style={{ padding: '2em 2em', paddingBottom:'100px' }} vertical>
+          <Image centered size="medium" src='../images/elegant3.png'/>
+          <Segment  style={{ padding: '0em 2em', paddingBottom:'100px' }} vertical>
             <Grid container stackable >
               <Grid.Row verticalAlign="middle">
                 <Grid.Column style={{fontFamily: 'Arsenal'}} width={9}>
@@ -52,7 +52,7 @@ class Home extends React.Component {
               </Grid.Row>
             </Grid>
           </Segment>
-        <Segment inverted vertical style={{ padding: '2em 0em',backgroundColor: "rgb(156, 156, 156)", fontFamily: 'Arsenal' }}>
+        <Segment inverted vertical style={{ padding: '2em',backgroundColor: "rgb(156, 156, 156)", fontFamily: 'Arsenal' }}>
           <Container>
             <Grid divided inverted stackable>
               <Grid.Row>
@@ -73,12 +73,12 @@ class Home extends React.Component {
                     </div>
                   </div>
                 </Grid.Column>
-                <Grid.Column width={10} verticalAlign="middle">
+                <Grid.Column width={11}  verticalAlign="middle">
                   <Link to='./testimonials'>
                     <Header style={{fontFamily: 'Arima Madurai'}}as='h3' inverted>Testimonials</Header>
                   </Link>
                     <Slider {...settings}>
-                      <div>
+                      <div style={{marginLeft: '90px'}}>
                         <h3 style={{fontFamily: 'Arsenal'}}>"Janessa has been doing my lashes for years now. She is simply the best there is and I wouldn't go anywhere else!" - Lindsay B. </h3>
                       </div>
                       <div>
