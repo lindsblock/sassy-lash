@@ -8,17 +8,18 @@ class About extends React.Component {
       <div className="background">
         <Header as="h1" style={styles.pageHeaders}> About Janessa</Header>
         <Segment style={{ padding: '2em 2em' }} vertical>
-        <Grid container stackable verticalAlign='middle'>
-          <Grid.Row>
+        <Grid container stackable>
+          <Grid.Row verticalAlign="middle">
             <Grid.Column  width={6}>
               <Image
+                centered
                 bordered
                 rounded
                 size='medium'
                 src='../images/bio.JPG'
               />
             </Grid.Column>
-            <Grid.Column floated="left" style={{fontFamily: 'Arsenal'}} width={10}>
+            <Grid.Column verticalAlign="middle" floated="left" style={{fontFamily: 'Arsenal'}} width={10}>
               <Segment style={{fontSize: '20px'}}>
                 <p>Hi! I'm Janessa! I've been a lash artist and esthetician since 2011. I went to Elase Academy which is now known
                   as NIMA. I took a lash course in school mostly just to add it to my resume. I hated it at first and had you told

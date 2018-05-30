@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image, Header, Segment, Container, Button, Divider, Form, Card, Grid } from 'semantic-ui-react';
+import { Image, Header, Segment, Container, Button, Divider, Form } from 'semantic-ui-react';
 import axios from 'axios';
 
 class Testimonials extends React.Component {
@@ -91,7 +91,7 @@ class Testimonials extends React.Component {
             </Segment>
           :
           <div>
-             <Segment textAlign="left" style={{ margin: '50px'}}>
+             <Segment textAlign="left" style={{ margin: '50px', fontSize:'1.33em', fontFamily:'Arsenal'}}>
                { testimonials.map( t =>
              <p key={t.id}>"{t.comment}" ~ {t.name} <Divider /> </p>
                )}
@@ -115,10 +115,5 @@ const styles = {
     fontSize: '35px'
   }
 }
-
-// const mapStateToProps = (state) => {
-//   return { testimonials: state.testimonials }
-// }
-
 
 export default Testimonials;

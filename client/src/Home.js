@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header, Segment, Button, Container, Grid, Image, Divider } from 'semantic-ui-react';
+import { Header, Segment, Button, Container, Grid, Image } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 import Slider from "react-slick";
 
@@ -54,7 +54,7 @@ class Home extends React.Component {
           </Segment>
         <Segment inverted vertical style={{ padding: '2em',backgroundColor: "rgb(156, 156, 156)", fontFamily: 'Arsenal' }}>
           <Container>
-            <Grid divided inverted stackable>
+            <Grid inverted stackable>
               <Grid.Row>
                 <Grid.Column width={5}>
                   <Link to='./contact'>

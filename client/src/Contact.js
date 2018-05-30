@@ -8,7 +8,7 @@ class Contact extends React.Component {
     return (
       <div className="background">
         <Header as="h1" style={styles.pageHeaders}> Contact </Header>
-          <Segment style={{ padding: '2em 5em' }} vertical>
+          <Segment style={{ padding: '2em 2em' }} vertical>
           <Grid container stackable verticalAlign='middle'>
             <Grid.Row>
               <Grid.Column  width={6}>
@@ -30,16 +30,17 @@ class Contact extends React.Component {
               <Grid.Column floated="right" style={{fontFamily: 'Arsenal'}} width={8}>
                 <Segment>
                 <Header as='h3' style={styles.secondaryHeaders}>Address</Header>
-                <div >
+                <div>
                   <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3031.286692348012!2d-111.89259208519414!3d40.55734577934901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x875287b84be435a1%3A0x10f2dbed158e5c79!2sImage+Studios+360+Sandy!5e0!3m2!1sen!2sus!4v1525908487567"
-                    width="350"
+                    width="100%"
                     height="250"
                     frameBorder="0"
-                    allowFullScreen>
+                    allowFullScreen
+                  >
                   </iframe>
                 </div>
-                  <p style={{ fontSize: '1.33em' }}>Image Studios Sandy</p>
+                  <p style={{ fontSize: '1.33em' }}>Image Studios 360 Sandy</p>
                   <p style={{ fontSize: '1.33em' }}>10691 S State Street, #107</p>
                   <p style={{ fontSize: '1.33em' }}>Sandy, Utah 84070</p>
                 <Header as='h3' style={styles.secondaryHeaders}>Phone</Header>
