@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header, Segment, Divider, Image } from 'semantic-ui-react';
+import { Header, Segment, Divider, Image, Container, Card } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 
 
@@ -16,26 +16,18 @@ class Faq extends React.Component {
             <p>Full sets take about 90 minutes and fills are about 1 hour.</p>
             <Divider />
             <Header as="h1" style={styles.secondaryHeaders}>Will eyelash extensions harm my natural eyelashes?</Header>
-            <div style={{overflow:'auto'}}>
-              <Image style={{float:'right', margin:'10px'}} src="./images/repair4.JPG" size="small"/>
               <p>No, eyelash extensions will not harm your natural lashes as long as they aren't picked or rubbed. They are applied individually and just grow out and shed with
-                your natural lashes.This is an example of a client when we removed her eyelash extensions that had
-                been on for years. Her natural lashes remain full and healthy!
+                your natural lashes. See image below.
               </p>
-            </div>
-
             <Divider />
             <Header as="h1" style={styles.secondaryHeaders}>How do I prepare for my eyelash extension appointment?</Header>
             <p>Come with a clean face and clean lashes.</p>
             <Divider />
             <Header as="h1" style={styles.secondaryHeaders}>What is the difference between Classic and Volume eyelash extensions?</Header>
-            <div style={{overflow:'auto'}}>
-              <Image style={{float: 'left', margin:"10px"}} src="./images/classicvsvolume.JPG"  size="small" verticalAlign="middle" />
               <p>Classic lashes have a 1 extension to 1 natural lash application process. They are great for people who want a natural
                 look and have plenty of natural lashes. Volume lashes are a fan of multiple lighter weight lashes that are applied to one natural lash.
-                They give you a much more dramatic and full look. This is an example of Classic lashes vs. Volume lashes.
+                They give you a much more dramatic and full look. See image below.
               </p>
-            </div>
             <Divider />
             <Header as="h1" style={styles.secondaryHeaders}>How do I take care of my eyelash extensions?</Header>
             <p>See my <Link to='./aftercare'>AFTER CARE</Link> page</p>
@@ -46,6 +38,24 @@ class Faq extends React.Component {
             <Header as="h1" style={styles.secondaryHeaders}>How long does a lash lift last?</Header>
             <p>6-8 weeks</p>
         </Segment>
+        <Card.Group stackable centered itemsPerRow={4} style={{margin: '20px'}}>
+          <Card>
+            <Card.Content textAlign="center">
+              <Image style={{marginBottom: '10px'}} src="./images/repair4.JPG"/>
+              <Card.Description style={{fontFamily: 'arsenal', fontSize:'18px'}}>
+                This is an example of a client who has had lashes removed after having them on for years. Her natural lashes remain full and healthy.
+              </Card.Description>
+            </Card.Content>
+          </Card>
+          <Card>
+            <Card.Content textAlign="center">
+              <Image style={{marginBottom: '10px'}} src="./images/classicvsvolume.JPG"/>
+              <Card.Description style={{fontFamily: 'arsenal', fontSize:'18px'}}>
+                This is an example of Classic Lashes (top) vs Volume Lashes (bottom).
+              </Card.Description>
+            </Card.Content>
+          </Card>
+        </Card.Group>
     </div>
     );
   }
@@ -61,6 +71,11 @@ const styles = {
   secondaryHeaders: {
     fontFamily: 'Arima Madurai',
     fontSize: '20px'
+  },
+  cardHeaders: {
+    fontFamily: 'Arima Madurai',
+    fontSize: '30px',
+    textAlign: 'center'
   }
 }
 
