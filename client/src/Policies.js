@@ -1,9 +1,9 @@
 import React from 'react';
-import { Header, Button, Segment, Form, Checkbox, Divider, List } from 'semantic-ui-react';
+import { Header, Button, Segment, Form, Divider, List } from 'semantic-ui-react';
 import axios from 'axios'
 
 class Policies extends React.Component {
-  state = { name: '', phone: '', conditions: '' }
+  state = { name: '', phone: '', conditions: '', agree: false }
 
   handleChange = (e) => {
     const { value, name } = e.target
@@ -20,7 +20,7 @@ class Policies extends React.Component {
   }
 
   render() {
-    const { name, phone, conditions } = this.state
+    const { name, phone, conditions, agree } = this.state
     return (
       <div className="background">
         <Header as="h1" style={styles.pageHeaders}> Policies and Consent Form</Header>
@@ -75,7 +75,16 @@ class Policies extends React.Component {
                label="Conditions or Allergies"
              />
              <p>BY CHECKING THE BOX BELOW YOU AGREE TO THE ABOVE TERMS AND POLICIES. </p>
-             <Checkbox style={{fontFamily:'Arsenal'}} label='I Agree' />
+             <input
+               style={{ height:'20px', width: '20px'}}
+               type="checkbox"
+               id="agree"
+               name="agree"
+               value={agree}
+               required >
+
+              </input>
+               I Agree
              <Divider hidden/>
              <Button style={{ fontFamily: 'Arsenal'}}>Submit</Button>
           </Form>

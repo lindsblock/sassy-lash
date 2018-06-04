@@ -1,14 +1,37 @@
 import React from 'react';
-import { Header, Card, Divider } from 'semantic-ui-react';
+import { Header, Card, Divider, Grid } from 'semantic-ui-react';
 import ImageZoom from 'react-medium-image-zoom';
-
+import ScrollUpButton from "react-scroll-up-button"
 
 class Photos extends React.Component {
   render() {
     return (
       <div className="background">
         <Header as="h1" style={styles.pageHeaders}> Photo Gallery</Header>
-        <Header as="h1" style={styles.secondaryHeaders}>Classic Lashes</Header>
+        <div>
+          <ScrollUpButton />
+        </div>
+        <Grid textAlign="center" stackable >
+          <Grid.Row style={{fontFamily:'Arima Madurai'}}>
+            <Grid.Column  width={2}>
+              <a href="#classic"><Header style={{fontFamily:'Arima Madurai', textDecoration:'underline'}} as="h3">Classic</Header></a>
+            </Grid.Column>
+            <Grid.Column width={2}>
+              <a href="#volume"><Header style={{fontFamily:'Arima Madurai', textDecoration:'underline'}} as="h3">Volume</Header></a>
+            </Grid.Column>
+            <Grid.Column width={2}>
+              <a href="#hybrid"><Header style={{fontFamily:'Arima Madurai', textDecoration:'underline'}} as="h3">Hybrid</Header></a>
+            </Grid.Column>
+            <Grid.Column width={2}>
+              <a href="#repairs"><Header style={{fontFamily:'Arima Madurai', textDecoration:'underline'}} as="h3">Repairs</Header></a>
+            </Grid.Column>
+            <Grid.Column width={2}>
+              <a href="#lashlifts"><Header style={{fontFamily:'Arima Madurai', textDecoration:'underline'}} as="h3">Lash Lifts</Header></a>
+            </Grid.Column>
+          </Grid.Row>
+        </Grid>
+        <Divider />
+        <a id="classic"><Header as="h1" style={styles.secondaryHeaders}>Classic Lashes</Header></a>
         <Card.Group stackable centered itemsPerRow={4} style={{ margin: '10px'}}>
           <Card>
             <Card.Content textAlign="center">
@@ -151,7 +174,7 @@ class Photos extends React.Component {
           </Card>
         </Card.Group>
         <Divider />
-        <Header as="h1" style={styles.secondaryHeaders}>Volume Lashes</Header>
+        <a id="volume"><Header as="h1" style={styles.secondaryHeaders}>Volume Lashes</Header></a>
         <Card.Group stackable centered itemsPerRow={4} style={{ margin: '10px'}}>
           <Card>
             <Card.Content textAlign="center">
@@ -408,7 +431,7 @@ class Photos extends React.Component {
           </Card>
         </Card.Group>
         <Divider />
-        <Header as="h1" style={styles.secondaryHeaders} >Hybrid Lashes</Header>
+        <a id="hybrid"><Header as="h1" style={styles.secondaryHeaders} >Hybrid Lashes</Header></a>
         <Card.Group stackable centered itemsPerRow={4} style={{ margin: '10px'}}>
           <Card>
             <Card.Content textAlign="center">
@@ -458,7 +481,7 @@ class Photos extends React.Component {
           </Card>
         </Card.Group>
         <Divider />
-        <Header as="h1" style={styles.secondaryHeaders} >Repairs</Header>
+        <a id="repairs"><Header as="h1" style={styles.secondaryHeaders} >Repairs</Header></a>
         <Card.Group  stackable centered itemsPerRow={4} style={{ margin: '10px'}}>
           <Card>
             <Card.Content textAlign="center">
@@ -554,7 +577,7 @@ class Photos extends React.Component {
           </Card>
         </Card.Group>
         <Divider />
-        <Header as="h1" style={styles.secondaryHeaders}>Lash Lifts</Header>
+        <a id="lashlifts"><Header as="h1" style={styles.secondaryHeaders}>Lash Lifts</Header></a>
         <Card.Group stackable centered itemsPerRow={4} style={{ margin: '10px'}}>
           <Card>
             <Card.Content textAlign="center">

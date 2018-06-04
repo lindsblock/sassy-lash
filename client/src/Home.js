@@ -79,22 +79,19 @@ class Home extends React.Component {
                   </Link>
                     <Slider {...settings}>
                       <div style={{marginLeft: '90px'}}>
-                        <h3 style={{fontFamily: 'Arsenal'}}>"Janessa has been doing my lashes for years now. She is simply the best there is and I wouldn't go anywhere else!" - Lindsay B. </h3>
+                        <h3 style={{fontFamily: 'Arsenal'}}>"Janessa has been doing my lashes for years now. She is simply the best there is and I wouldn't go anywhere else!" ~ Lindsay B. </h3>
                       </div>
                       <div>
-                        <h3 style={{fontFamily: 'Arsenal'}}>"If you want precision and natural looking lashes you must go to Sassy Lash!" - Debbie W. </h3>
+                        <h3 style={{fontFamily: 'Arsenal'}}>"If you want precision and natural looking lashes you must go to Sassy Lash!" ~ Debbie W. </h3>
                       </div>
                       <div>
-                        <h3 style={{fontFamily: 'Arsenal'}}>Another Testimonial</h3>
+                        <h3 style={{fontFamily: 'Arsenal'}}>"Janessa is amazing at what she does. I have been to multiple lash artist and can't help but keep going back to her. She does them so perfect and they last a lot longer then most!" ~ Vanessa F.</h3>
                       </div>
                       <div>
-                        <h3 style={{fontFamily: 'Arsenal'}}>Another Testimonial</h3>
+                        <h3 style={{fontFamily: 'Arsenal'}}>"I have had my lashes for a couple of weeks now and hands done she is the best in the business. They feel natural and have lasted! I am very impressed!" ~ Nicole S.</h3>
                       </div>
                       <div>
-                        <h3 style={{fontFamily: 'Arsenal'}}>Another Testimonial</h3>
-                      </div>
-                      <div>
-                        <h3 style={{fontFamily: 'Arsenal'}}>Another Testimonial</h3>
+                        <h3 style={{fontFamily: 'Arsenal'}}>"AMAZING! Thank you Janessa for beautiful waxed and tinted brows! You do a wonderful job!" ~ JaNae N.</h3>
                       </div>
                     </Slider>
                 </Grid.Column>
