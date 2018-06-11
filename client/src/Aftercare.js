@@ -27,6 +27,7 @@ class Aftercare extends React.Component {
                   <List.Item>Do use an eyelash sealant instead of mascara to darken them after applying makeup. I recommend something like Black Diamond and I have some for sale in my salon. </List.Item>
                   <List.Item>Do be gentle around the eyes when removing makeup.</List.Item>
                   <List.Item>Do try to avoid water( letting your face run under the shower, fully submerging in a pool, etc.). Keep them as dry as possible! </List.Item>
+                  <List.Item>Do keep your lashes clean. The easiest way is using a foaming cleanser that I have available for sale in my salon. Or you can use any oil free makeup remover. It is best to clean them 1-2x/wk and also make sure they are clean prior to your appointments. </List.Item>
                 </List>
                 <Header as='h3' style={styles.secondaryHeaders}>Dont's</Header>
                 <List bulleted style={{ fontSize: '1.33em' }}>

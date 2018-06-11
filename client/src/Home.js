@@ -52,7 +52,7 @@ class Home extends React.Component {
               </Grid.Row>
             </Grid>
           </Segment>
-        <Segment inverted vertical style={{ padding: '2em',backgroundColor: "rgb(156, 156, 156)", fontFamily: 'Arsenal' }}>
+        <Segment inverted vertical style={{ padding: '2em',backgroundColor: "rgb(153, 152, 152)", fontFamily: 'Arsenal' }}>
           <Container>
             <Grid inverted stackable>
               <Grid.Row>
@@ -88,7 +88,7 @@ class Home extends React.Component {
                         <h3 style={{fontFamily: 'Arsenal'}}>"Janessa is amazing at what she does. I have been to multiple lash artist and can't help but keep going back to her. She does them so perfect and they last a lot longer then most!" ~ Vanessa F.</h3>
                       </div>
                       <div>
-                        <h3 style={{fontFamily: 'Arsenal'}}>"I have had my lashes for a couple of weeks now and hands done she is the best in the business. They feel natural and have lasted! I am very impressed!" ~ Nicole S.</h3>
+                        <h3 style={{fontFamily: 'Arsenal'}}>"Janessa is awesome!!! Janessa has been doing my lashes for more than six years! She is professional, detailed and quick! I would never go to anyone else!" ~ Christin F.</h3>
                       </div>
                       <div>
                         <h3 style={{fontFamily: 'Arsenal'}}>"AMAZING! Thank you Janessa for beautiful waxed and tinted brows! You do a wonderful job!" ~ JaNae N.</h3>

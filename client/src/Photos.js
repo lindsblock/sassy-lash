@@ -12,7 +12,7 @@ class Photos extends React.Component {
           <ScrollUpButton />
         </div>
         <Grid textAlign="center" stackable >
-          <Grid.Row style={{fontFamily:'Arima Madurai'}}>
+          <Grid.Row style={{fontFamily:'Arima Madurai', marginBottom:'40px'}}>
             <Grid.Column  width={2}>
               <a href="#classic"><Header style={{fontFamily:'Arima Madurai', textDecoration:'underline'}} as="h3">Classic</Header></a>
             </Grid.Column>
@@ -30,7 +30,6 @@ class Photos extends React.Component {
             </Grid.Column>
           </Grid.Row>
         </Grid>
-        <Divider />
         <a id="classic"><Header as="h1" style={styles.secondaryHeaders}>Classic Lashes</Header></a>
         <Card.Group stackable centered itemsPerRow={4} style={{ margin: '10px'}}>
           <Card>
@@ -52,7 +51,7 @@ class Photos extends React.Component {
                Classic Lashes
              </Card.Header>
              <Card.Description>
-               Full set before and after- Classic
+               Full set before and after.
              </Card.Description>
             </Card.Content>
           </Card>
@@ -75,7 +74,7 @@ class Photos extends React.Component {
                Classic Lashes
              </Card.Header>
              <Card.Description>
-              Full set before and after- Classic
+              Full set before and after.
              </Card.Description>
             </Card.Content>
           </Card>
@@ -94,12 +93,11 @@ class Photos extends React.Component {
                 }}
               />
               <Divider hidden />
-
-              <Card.Header style={styles.cardHeaders}>
+            <Card.Header style={styles.cardHeaders}>
                 Classic Lashes
               </Card.Header>
               <Card.Description>
-              Full set before and after- Classic
+              Full set before and after.
               </Card.Description>
             </Card.Content>
           </Card>
@@ -122,7 +120,7 @@ class Photos extends React.Component {
                 Classic Lashes
               </Card.Header>
               <Card.Description>
-              Full set before and after- Classic
+              Full set before and after.
               </Card.Description>
             </Card.Content>
           </Card>
@@ -145,7 +143,7 @@ class Photos extends React.Component {
                 Classic Lashes
               </Card.Header>
               <Card.Description>
-              Full set before and after- Classic
+              Full set before and after.
               </Card.Description>
             </Card.Content>
           </Card>
@@ -168,12 +166,12 @@ class Photos extends React.Component {
                 Classic Lashes
               </Card.Header>
               <Card.Description>
-              Full set before and after- Classic
+              Full set before and after.
               </Card.Description>
             </Card.Content>
           </Card>
         </Card.Group>
-        <Divider />
+        <Divider hidden />
         <a id="volume"><Header as="h1" style={styles.secondaryHeaders}>Volume Lashes</Header></a>
         <Card.Group stackable centered itemsPerRow={4} style={{ margin: '10px'}}>
           <Card>
@@ -195,7 +193,7 @@ class Photos extends React.Component {
                 Volume Lashes
               </Card.Header>
               <Card.Description>
-                Full set before and after- Volume
+                Full set before and after.
               </Card.Description>
             </Card.Content>
           </Card>
@@ -218,7 +216,7 @@ class Photos extends React.Component {
                 Classic vs. Volume
               </Card.Header>
               <Card.Description>
-                Classic (top), Volume (bottom)
+                Classic (top) vs. Volume (bottom).
               </Card.Description>
             </Card.Content>
           </Card>
@@ -241,7 +239,7 @@ class Photos extends React.Component {
                 Volume Lashes
               </Card.Header>
               <Card.Description>
-                2.5 weeks after last fill(left) vs. just after fill(right)- Volume
+                2.5 weeks after last fill (left) vs. just after fill (right).
               </Card.Description>
             </Card.Content>
           </Card>
@@ -264,7 +262,7 @@ class Photos extends React.Component {
                 Volume Lashes
               </Card.Header>
               <Card.Description>
-                Full set before and after- Volume
+                Full set before and after.
               </Card.Description>
             </Card.Content>
           </Card>
@@ -402,7 +400,7 @@ class Photos extends React.Component {
                 Volume Lashes
               </Card.Header>
               <Card.Description>
-                4 weeks after last fill(left) vs. just after fill(right)- Volume
+                4 weeks after last fill (left) vs. just after fill (right).
               </Card.Description>
             </Card.Content>
           </Card>
@@ -430,7 +428,7 @@ class Photos extends React.Component {
             </Card.Content>
           </Card>
         </Card.Group>
-        <Divider />
+        <Divider hidden/>
         <a id="hybrid"><Header as="h1" style={styles.secondaryHeaders} >Hybrid Lashes</Header></a>
         <Card.Group stackable centered itemsPerRow={4} style={{ margin: '10px'}}>
           <Card>
@@ -452,7 +450,7 @@ class Photos extends React.Component {
                Hybrid Lashes
              </Card.Header>
              <Card.Description>
-               Full set before and after- Hybrid
+               Full set before and after.
              </Card.Description>
             </Card.Content>
           </Card>
@@ -475,12 +473,12 @@ class Photos extends React.Component {
                Hybrid Lashes
              </Card.Header>
              <Card.Description>
-              Combination of Classic and Volume Lashes
+              Combination of Classic and Volume Lashes.
              </Card.Description>
             </Card.Content>
           </Card>
         </Card.Group>
-        <Divider />
+        <Divider hidden />
         <a id="repairs"><Header as="h1" style={styles.secondaryHeaders} >Repairs</Header></a>
         <Card.Group  stackable centered itemsPerRow={4} style={{ margin: '10px'}}>
           <Card>
@@ -502,7 +500,7 @@ class Photos extends React.Component {
                Repair
              </Card.Header>
              <Card.Description>
-               Before and during removal of horrible clumped lashes from sombeody else(top) vs. After a brand new set of Classic lashes (bottom)
+               Before and during removal of horrible clumped lashes from sombeody else (top) vs. after a brand new set of Classic lashes (bottom).
              </Card.Description>
             </Card.Content>
           </Card>
@@ -525,7 +523,7 @@ class Photos extends React.Component {
                Repair
              </Card.Header>
              <Card.Description>
-              Same client as previous pic. After removal of bad lashes from first appointment(top) vs. Two weeks after my fill(bottom). Her natural lashes are coming back in.
+              Same client as previous picture. After removal of bad lashes from first appointment (top) vs. two weeks after my fill (bottom). Her natural lashes are growing back in nice and healthy.
              </Card.Description>
             </Card.Content>
           </Card>
@@ -548,7 +546,7 @@ class Photos extends React.Component {
                Repair
              </Card.Header>
              <Card.Description>
-              After my fill(top) vs. somebody else's work (bottom)
+              After my fill (top) vs. somebody else's work (bottom).
             </Card.Description>
             </Card.Content>
           </Card>
@@ -576,7 +574,7 @@ class Photos extends React.Component {
             </Card.Content>
           </Card>
         </Card.Group>
-        <Divider />
+        <Divider hidden />
         <a id="lashlifts"><Header as="h1" style={styles.secondaryHeaders}>Lash Lifts</Header></a>
         <Card.Group stackable centered itemsPerRow={4} style={{ margin: '10px'}}>
           <Card>
@@ -598,7 +596,7 @@ class Photos extends React.Component {
                Lash Lift
              </Card.Header>
              <Card.Description>
-               Lash Lift desciption
+               Before and After Lash Lift. Her natural lashes are nice and curly!
              </Card.Description>
             </Card.Content>
           </Card>
