@@ -37,6 +37,7 @@ class Contact extends React.Component {
                     height="250"
                     frameBorder="0"
                     allowFullScreen
+                    title="Google Map"
                   >
                   </iframe>
                 </div>
