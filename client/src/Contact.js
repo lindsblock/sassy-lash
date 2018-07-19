@@ -68,7 +68,7 @@ class Contact extends React.Component {
                   </a>
                 <Divider hidden />
                 <p style={{ fontSize: '1.33em' }}> Please view my policies and sign my consent form before your appointment
-                <Link to='./policies' style={{ fontSize: '1em', color:'rgb(122, 122, 122)'}}> HERE.</Link>
+                <Link to='./policies' style={{ fontSize: '1em', color:'rgb(170, 73, 203)'}}> HERE.</Link>
                 </p>
               </Segment>
               </Grid.Column>
