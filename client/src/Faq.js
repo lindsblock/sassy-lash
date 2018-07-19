@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header, Segment, Divider, Image, Container, Card } from 'semantic-ui-react';
+import { Header, Segment, Divider, Image, Card } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 
 
@@ -30,7 +30,7 @@ class Faq extends React.Component {
               </p>
             <Divider />
             <Header as="h1" style={styles.secondaryHeaders}>How do I take care of my eyelash extensions?</Header>
-            <p>See my <Link to='./aftercare'>AFTER CARE</Link> page</p>
+            <p>See my <Link to='./aftercare' style={{color:'rgb(121, 121, 121)'}}>AFTER CARE</Link> page</p>
             <Divider />
             <Header as="h1" style={styles.secondaryHeaders}>What is a lash lift?</Header>
             <p>A lash lift is like a perm for your lashes providing some curl! Lash lifts are great for clients not wanting extensions but still want to open up their eyes.</p>
@@ -38,7 +38,7 @@ class Faq extends React.Component {
             <Header as="h1" style={styles.secondaryHeaders}>How long does a lash lift last?</Header>
             <p>6-8 weeks</p>
         </Segment>
-        <Card.Group stackable centered itemsPerRow={4} style={{margin: '20px'}}>
+        <Card.Group stackable centered itemsPerRow={4} style={{margin: '20px', fontSize:'1.33em'}}>
           <Card>
             <Card.Content textAlign="center">
               <Image style={{marginBottom: '10px'}} src="./images/repair4.JPG"/>

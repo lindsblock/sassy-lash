@@ -20,7 +20,7 @@ class About extends React.Component {
               />
             </Grid.Column>
             <Grid.Column verticalAlign="middle" floated="left" style={{fontFamily: 'Arsenal'}} width={10}>
-              <Segment style={{fontSize: '20px'}}>
+              <Segment style={{fontSize: '1.33em'}}>
                 <p>Hi! I'm Janessa! I've been a lash artist and esthetician since 2011. I went to Elase Academy which is now known
                   as NIMA. I took a lash course in school mostly just to add it to my resume. I hated it at first and had you told
                   me then that I would end up doing lashes full time I would have laughed at you! I did lashes on the side on friends

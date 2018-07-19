@@ -52,7 +52,7 @@ class Home extends React.Component {
               </Grid.Row>
             </Grid>
           </Segment>
-        <Segment inverted vertical style={{ padding: '2em',backgroundColor: "rgb(153, 152, 152)", fontFamily: 'Arsenal' }}>
+        <Segment inverted vertical style={{ padding: '2em',backgroundColor: "rgb(153, 152, 152)", fontFamily: 'Arsenal', fontSize:'1.33em' }}>
           <Container>
             <Grid inverted stackable>
               <Grid.Row>
@@ -79,7 +79,7 @@ class Home extends React.Component {
                   </Link>
                     <Slider {...settings}>
                       <div style={{marginLeft: '90px'}}>
-                        <h3 style={{fontFamily: 'Arsenal'}}>"Janessa has been doing my lashes for years now. She is simply the best there is and I wouldn't go anywhere else!" ~ Lindsay B. </h3>
+                        <h3 style={{fontFamily: 'Arsenal'}}>"Janessa has been doing my lashes for years now, and my natural lashes remain healthy and strong allowing me to have a beautiful full look every time I get a fill. She is absolutely the best there is! I would never go to anybody else!" ~ Lindsay B. </h3>
                       </div>
                       <div>
                         <h3 style={{fontFamily: 'Arsenal'}}>"If you want precision and natural looking lashes you must go to Sassy Lash!" ~ Debbie W. </h3>

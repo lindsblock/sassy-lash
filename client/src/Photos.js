@@ -31,7 +31,7 @@ class Photos extends React.Component {
           </Grid.Row>
         </Grid>
         <a id="classic"><Header as="h1" style={styles.secondaryHeaders}>Classic Lashes</Header></a>
-        <Card.Group stackable centered itemsPerRow={4} style={{ margin: '10px'}}>
+        <Card.Group stackable centered itemsPerRow={4} style={{ margin: '10px', fontSize: '1.33em'}}>
           <Card>
             <Card.Content textAlign="center">
               <ImageZoom
@@ -173,7 +173,7 @@ class Photos extends React.Component {
         </Card.Group>
         <Divider hidden />
         <a id="volume"><Header as="h1" style={styles.secondaryHeaders}>Volume Lashes</Header></a>
-        <Card.Group stackable centered itemsPerRow={4} style={{ margin: '10px'}}>
+        <Card.Group stackable centered itemsPerRow={4} style={{ margin: '10px', fontSize:'1.33em'}}>
           <Card>
             <Card.Content textAlign="center">
               <ImageZoom
@@ -430,7 +430,7 @@ class Photos extends React.Component {
         </Card.Group>
         <Divider hidden/>
         <a id="hybrid"><Header as="h1" style={styles.secondaryHeaders} >Hybrid Lashes</Header></a>
-        <Card.Group stackable centered itemsPerRow={4} style={{ margin: '10px'}}>
+        <Card.Group stackable centered itemsPerRow={4} style={{ margin: '10px', fontSize:'1.33em'}}>
           <Card>
             <Card.Content textAlign="center">
               <ImageZoom
@@ -480,7 +480,7 @@ class Photos extends React.Component {
         </Card.Group>
         <Divider hidden />
         <a id="repairs"><Header as="h1" style={styles.secondaryHeaders} >Repairs</Header></a>
-        <Card.Group  stackable centered itemsPerRow={4} style={{ margin: '10px'}}>
+        <Card.Group  stackable centered itemsPerRow={4} style={{ margin: '10px', fontSize:'1.33em'}}>
           <Card>
             <Card.Content textAlign="center">
               <ImageZoom
@@ -576,7 +576,7 @@ class Photos extends React.Component {
         </Card.Group>
         <Divider hidden />
         <a id="lashlifts"><Header as="h1" style={styles.secondaryHeaders}>Lash Lifts</Header></a>
-        <Card.Group stackable centered itemsPerRow={4} style={{ margin: '10px'}}>
+        <Card.Group stackable centered itemsPerRow={4} style={{ margin: '10px', fontSize: '1.33em'}}>
           <Card>
             <Card.Content textAlign="center">
               <ImageZoom

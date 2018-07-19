@@ -71,7 +71,7 @@ class Testimonials extends React.Component {
           <Button color='black' style={{fontFamily:'Arsenal'}} onClick={this.toggleForm}>{ showForm ? "Cancel" : "Leave A Testimonial" }</Button>
           { showForm ?
             <Segment style={{ margin: '50px'}}>
-              <Form onSubmit={this.handleSubmit} style={{fontFamily:'Arsenal', fontSize: '18px'}}>
+              <Form onSubmit={this.handleSubmit} style={{fontFamily:'Arsenal'}}>
                 <Form.Input
                   name="name"
                   required
@@ -86,7 +86,7 @@ class Testimonials extends React.Component {
                   onChange={this.handleChange}
                   label="Comment"
                   />
-                <Button style={{ fontFamily: 'Arsenal'}}>Submit</Button>
+                <Button style={{ fontFamily: 'Arsenal', fontSize:'1em'}}>Submit</Button>
               </Form>
             </Segment>
           :

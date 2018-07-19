@@ -26,22 +26,22 @@ class Policies extends React.Component {
         <Header as="h1" style={styles.pageHeaders}> Policies and Consent Form</Header>
         <Segment style={{ fontFamily: 'Arsenal', fontSize: '18px', margin: '50px'}}>
           <Header as="h1" style={styles.secondaryHeaders}>Sassy Lash & Esthetics Consent Form</Header> <Header as="h1" style={styles.secondaryHeaders}>Cancellation Policy</Header>
-          <List bulleted style={{ fontSize: '18px' }}>
+          <List bulleted style={{ fontSize: '19px' }}>
             <List.Item>24 hrs notice is required for all cancellations. Same day cancellations or no shows are subject to a $25 fee due prior to rescheduling another appointment.
               Two or more violations will require pre-payment for future services and require a credit card on file. </List.Item>
           </List>
           <Header as="h1" style={styles.secondaryHeaders}>Late Policy</Header>
-          <List bulleted style={{ fontSize: '18px'}}>
+          <List bulleted style={{ fontSize: '19px'}}>
             <List.Item>If you are under 30 min late we can still complete the appt with the remaining time but will still be the full price of the service and your lashes may not be as full.
               30 mins late or more will result in a same day cancellation fee  of $25 and you will have to reschedule.</List.Item>
           </List>
           <Header as="h1" style={styles.secondaryHeaders}>New Client Policy</Header>
-          <List bulleted style={{ fontSize: '18px'}}>
+          <List bulleted style={{ fontSize: '19px'}}>
             <List.Item>If you are a new client that is getting a fill an extra $10 is required for your first appointment due to the extra work required.</List.Item>
           </List>
           <Header as="h1" style={styles.secondaryHeaders}>Know Before Your Appointment</Header>
           <p>Please be aware of the following information and fill out the bottom section of this form after reading.</p>
-          <List bulleted style={{ fontSize: '18px'}}>
+          <List bulleted style={{ fontSize: '19px'}}>
             <List.Item> I understand that because of my natural lash cycle I will need to maintain my extension every 2-4 weeks to keep them full.</List.Item>
             <List.Item> I understand that while every attempt will be made to provide me with the length and fullness I have
               chosen, my final result may not be what I initially envisioned due to amount of natural lashes and shedding cycles.</List.Item>
@@ -51,8 +51,8 @@ class Policies extends React.Component {
             <List.Item> I give permission to my lash extension specialist to perform the lash extension procedure we have discussed,
               and will hold her harmless and nameless from any liability that may result from this treatment.</List.Item>
           </List>
-          <p>Please fill out the following information.</p>
-          <Form onSubmit={this.handleSubmit} style={{fontFamily:'Arsenal', fontSize: '18px'}}>
+          <p style={{fontSize:'19px'}}>Please fill out the following information.</p>
+          <Form onSubmit={this.handleSubmit} style={{fontFamily:'Arsenal', fontSize: '19px'}}>
             <Form.Input
                name="name"
                required
