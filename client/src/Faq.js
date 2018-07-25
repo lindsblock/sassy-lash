@@ -30,7 +30,7 @@ class Faq extends React.Component {
               </p>
             <Divider />
             <Header as="h1" style={styles.secondaryHeaders}>How do I take care of my eyelash extensions?</Header>
-            <p>See my <Link to='./aftercare' style={{color:'rgb(121, 121, 121)'}}>AFTER CARE</Link> page</p>
+            <p>See my <Link to='./aftercare' style={{color:'rgb(170, 73, 203)'}}>AFTER CARE</Link> page</p>
             <Divider />
             <Header as="h1" style={styles.secondaryHeaders}>What is a lash lift?</Header>
             <p>A lash lift is like a perm for your lashes providing some curl! Lash lifts are great for clients not wanting extensions but still want to open up their eyes.</p>

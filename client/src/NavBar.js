@@ -15,7 +15,9 @@ class NavBar extends React.Component {
           minHeight: 150,
           backgroundPosition: 'center'
         }} vertical>
+        <Link to="/">
           <Header style={{ padding: '3px', fontFamily:'Great Vibes', fontSize: '70px', marginTop: '23px'}}>Sassy Lash & Esthetics</Header>
+        </Link>
           <Image centered src='./images/lashes3.png'/>
         </Segment>
         <div style={styles.navHeaders}>
