@@ -224,13 +224,13 @@ class Photos extends React.Component {
             <Card.Content textAlign="center">
               <ImageZoom
                 image={{
-                  src: '../images/volume2halfweeks.JPG',
+                  src: '../images/Volume2halfweeks.JPG',
                   alt: 'Volume Lashes',
                   className: 'img',
                   style: { width: '100%', height:'100%' }
                 }}
                 zoomImage={{
-                  src: '../images/volume2halfweeks.JPG',
+                  src: '../images/Volume2halfweeks.JPG',
                   alt: 'Volume lashes'
                 }}
               />
