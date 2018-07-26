@@ -184,7 +184,7 @@ class Photos extends React.Component {
                   style: { width: '100%', height:'100%' }
                 }}
                 zoomImage={{
-                  src: '../images/Volume2.JPG',
+                  src: '../images/volume2.JPG',
                   alt: 'Volume lashes'
                 }}
               />
@@ -253,7 +253,7 @@ class Photos extends React.Component {
                   style: { width: '100%', height:'100%' }
                 }}
                 zoomImage={{
-                  src: '../images/Volume3.JPG',
+                  src: '../images/volume3.JPG',
                   alt: 'Volume lashes'
                 }}
               />
@@ -276,7 +276,7 @@ class Photos extends React.Component {
                   style: { width: '100%', height:'100%' }
                 }}
                 zoomImage={{
-                  src: '../images/Volume4.JPG',
+                  src: '../images/volume4.JPG',
                   alt: 'Volume lashes'
                 }}
               />
@@ -299,7 +299,7 @@ class Photos extends React.Component {
                   style: { width: '100%', height:'100%' }
                 }}
                 zoomImage={{
-                  src: '../images/Volume5.JPG',
+                  src: '../images/volume5.JPG',
                   alt: 'Volume lashes'
                 }}
               />
@@ -322,7 +322,7 @@ class Photos extends React.Component {
                   style: { width: '100%', height:'100%' }
                 }}
                 zoomImage={{
-                  src: '../images/Volume6.JPG',
+                  src: '../images/volume6.JPG',
                   alt: 'Volume lashes'
                 }}
               />
@@ -345,7 +345,7 @@ class Photos extends React.Component {
                   style: { width: '100%', height:'100%' }
                 }}
                 zoomImage={{
-                  src: '../images/Volume7.JPG',
+                  src: '../images/volume7.JPG',
                   alt: 'Volume lashes'
                 }}
               />
@@ -368,7 +368,7 @@ class Photos extends React.Component {
                   style: { width: '100%', height:'100%' }
                 }}
                 zoomImage={{
-                  src: '../images/Volume8.JPG',
+                  src: '../images/volume8.JPG',
                   alt: 'Volume lashes'
                 }}
               />
@@ -391,7 +391,7 @@ class Photos extends React.Component {
                   style: { width: '100%', height:'100%' }
                 }}
                 zoomImage={{
-                  src: '../images/Volume9.JPG',
+                  src: '../images/volume9.JPG',
                   alt: 'Volume lashes'
                 }}
               />
@@ -414,7 +414,7 @@ class Photos extends React.Component {
                   style: { width: '100%', height:'100%' }
                 }}
                 zoomImage={{
-                  src: '../images/Volume10.JPG',
+                  src: '../images/volume10.JPG',
                   alt: 'Volume lashes'
                 }}
               />
@@ -441,7 +441,7 @@ class Photos extends React.Component {
                   style: { width: '100%', height:'100%' }
                 }}
                 zoomImage={{
-                  src: '../images/Hybrid1.JPG',
+                  src: '../images/hybrid1.JPG',
                   alt: 'Hybrid Lashes'
                 }}
               />
@@ -464,7 +464,7 @@ class Photos extends React.Component {
                   style: { width: '100%', height:'100%' }
                 }}
                 zoomImage={{
-                  src: '../images/Hybrid2.JPG',
+                  src: '../images/hybrid2.JPG',
                   alt: 'Hybrid Lashes'
                 }}
               />
@@ -491,7 +491,7 @@ class Photos extends React.Component {
                   style: { width: '100%', height:'100%' }
                 }}
                 zoomImage={{
-                  src: '../images/Repair1.jpg',
+                  src: '../images/repair1.jpg',
                   alt: 'Repair'
                 }}
               />
@@ -514,7 +514,7 @@ class Photos extends React.Component {
                   style: { width: '100%', height:'100%' }
                 }}
                 zoomImage={{
-                  src: '../images/Repair2.jpg',
+                  src: '../images/repair2.jpg',
                   alt: 'Repair'
                 }}
               />
@@ -531,13 +531,13 @@ class Photos extends React.Component {
             <Card.Content textAlign="center">
               <ImageZoom
                 image={{
-                  src: '../images/repair3.jpg',
+                  src: '../images/repair3.JPG',
                   alt: 'Repair',
                   className: 'img',
                   style: { width: '100%', height:'100%' }
                 }}
                 zoomImage={{
-                  src: '../images/Repair3.jpg',
+                  src: '../images/repair3.JPG',
                   alt: 'Repair'
                 }}
               />
@@ -554,13 +554,13 @@ class Photos extends React.Component {
             <Card.Content textAlign="center">
               <ImageZoom
                 image={{
-                  src: '../images/repair4.jpg',
+                  src: '../images/repair4.JPG',
                   alt: 'Repair',
                   className: 'img',
                   style: { width: '100%', height:'100%' }
                 }}
                 zoomImage={{
-                  src: '../images/Repair4.jpg',
+                  src: '../images/repair4.JPG',
                   alt: 'Repair'
                 }}
               />
