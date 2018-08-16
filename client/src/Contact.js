@@ -53,7 +53,7 @@ class Contact extends React.Component {
                 </p>
                 <Header as='h3' style={styles.secondaryHeaders}>Email</Header>
                 <p style={{ fontSize: '1.33em' }}>
-                  nessablueeyes7@hotmail.com
+                  sassylash7@gmail.com
                 </p>
                 <Header as='h3' style={styles.secondaryHeaders}>Hours</Header>
                 <p style={{ fontSize: '1.33em' }}>

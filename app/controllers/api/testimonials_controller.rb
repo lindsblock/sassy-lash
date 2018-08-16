@@ -8,7 +8,7 @@ class Api::TestimonialsController < ApplicationController
     if testimonial.save
       render json: testimonial
     else
-      render json: { erors: testimonial.errors.full_messages.join(','), status: 422 }
+      render json: { errors: testimonial.errors.full_messages.join(','), status: 422 }
     end
   end
 

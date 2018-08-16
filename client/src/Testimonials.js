@@ -7,7 +7,8 @@ class Testimonials extends React.Component {
     testimonials: [{
       name: '',
       comment: '',
-    }]
+    }],
+    showForm: false,
   }
 
   componentDidMount = () => {
@@ -78,6 +79,7 @@ class Testimonials extends React.Component {
                   value={name}
                   onChange={this.handleChange}
                   label="Name"
+
                 />
                 <Form.TextArea
                   name="comment"
