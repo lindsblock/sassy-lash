@@ -5,7 +5,6 @@ import Slider from "react-slick";
 
 class Home extends React.Component {
   render() {
-
     var settings = {
       dots: true,
       infinite: true,
