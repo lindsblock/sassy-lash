@@ -25,7 +25,8 @@ class Policies extends React.Component {
       <div className="background">
         <Header as="h1" style={styles.pageHeaders}> Policies and Consent Form</Header>
         <Segment style={{ fontFamily: 'Arsenal', fontSize: '18px', margin: '50px'}}>
-          <Header as="h1" textAlign="center" style={styles.secondaryHeaders}>Sassy Lash & Esthetics Consent Form</Header> <Header as="h1" style={styles.secondaryHeaders}>Cancellation Policy</Header>
+          <Header as="h1" textAlign="center" style={styles.secondaryHeaders}>Sassy Lash & Esthetics Consent Form</Header>
+          <Header as="h1" style={styles.secondaryHeaders}>Cancellation Policy</Header>
           <List bulleted style={{ fontSize: '19px' }}>
             <List.Item>24 hrs notice is required for all cancellations. Same day cancellations or no shows are subject to a $25 fee due prior to rescheduling another appointment.
               Two or more violations will require pre-payment for future services and require a credit card on file. </List.Item>

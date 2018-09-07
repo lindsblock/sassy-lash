@@ -59,7 +59,7 @@ const NavBar = () => {
                  <Menu.Item as='a' href="/aftercare">After Care</Menu.Item>
                  <Menu.Item as='a' href="/about">About</Menu.Item>
                  <Menu.Item as='a' href="/testimonials">Testimonials</Menu.Item>
-                 <Menu.Item as='a' href="/policies">Policies</Menu.Item>
+                 <Menu.Item as='a' href="/policies">Consent</Menu.Item>
                  <Menu.Item as='a' href="/contact">Contact</Menu.Item>
              </Dropdown.Menu>
          </Dropdown>
