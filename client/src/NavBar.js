@@ -42,7 +42,7 @@ const NavBar = () => {
             <Menu.Item style={styles.navHeaders} name='about'>Testimonials</Menu.Item>
           </Link>
           <Link to='/policies'>
-            <Menu.Item style={styles.navHeaders} name='policies'>Policies</Menu.Item>
+            <Menu.Item style={styles.navHeaders} name='policies'>Consent</Menu.Item>
           </Link>
           <Link to='/contact'>
             <Menu.Item style={styles.navHeaders} name='contact'>Contact</Menu.Item>

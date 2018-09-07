@@ -25,15 +25,15 @@ class Policies extends React.Component {
       <div className="background">
         <Header as="h1" style={styles.pageHeaders}> Policies and Consent Form</Header>
         <Segment style={{ fontFamily: 'Arsenal', fontSize: '18px', margin: '50px'}}>
-          <Header as="h1" style={styles.secondaryHeaders}>Sassy Lash & Esthetics Consent Form</Header> <Header as="h1" style={styles.secondaryHeaders}>Cancellation Policy</Header>
+          <Header as="h1" textAlign="center" style={styles.secondaryHeaders}>Sassy Lash & Esthetics Consent Form</Header> <Header as="h1" style={styles.secondaryHeaders}>Cancellation Policy</Header>
           <List bulleted style={{ fontSize: '19px' }}>
             <List.Item>24 hrs notice is required for all cancellations. Same day cancellations or no shows are subject to a $25 fee due prior to rescheduling another appointment.
               Two or more violations will require pre-payment for future services and require a credit card on file. </List.Item>
           </List>
           <Header as="h1" style={styles.secondaryHeaders}>Late Policy</Header>
           <List bulleted style={{ fontSize: '19px'}}>
-            <List.Item>If you are under 30 min late we can still complete the appt with the remaining time but will still be the full price of the service and your lashes may not be as full.
-              30 mins late or more will result in a same day cancellation fee  of $25 and you will have to reschedule.</List.Item>
+            <List.Item>If you are under 15 min late we can still complete the appt with the remaining time but will still be the full price of the service and your lashes may not be as full.
+              15 mins late or more will result in a same day cancellation fee  of $25 and you will have to reschedule.</List.Item>
           </List>
           <Header as="h1" style={styles.secondaryHeaders}>New Client Policy</Header>
           <List bulleted style={{ fontSize: '19px'}}>
@@ -82,7 +82,6 @@ class Policies extends React.Component {
                name="agree"
                value={agree}
                required >
-
               </input>
                I Agree
              <Divider hidden/>
